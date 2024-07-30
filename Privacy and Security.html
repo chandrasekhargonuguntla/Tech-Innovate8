@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Privacy and Security</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}   
+        .page1  {
+            height: 650px;
+            background-size: cover;
+            background-image: no-repeat;
+            color: bisque;
+            background-image: url(https://amtrustfinancial.com/getattachment/ANA-Blog/Blog/Small-Business/March-2019/Cybersecurity-vs-Data-Privacy/GettyImages-914788014-cybersecurity-vs-data-privacy-1-min.jpg?width=600&height=319);
+        }
+        .page1  h1 {
+            position: absolute;
+            font-size: 5em;
+            margin-top: 25%;
+            margin-left: 2.5%;
+            
+        }
+        .page1 h2 {
+            position: absolute;
+            margin-top: 33%;
+            font-size: 2.7em;
+            margin-left: 3%;
+        }
+        .page2 h1 {
+            margin-top: 3%;
+            font-size: 4em;
+            margin-left: 7%;
+        }
+        .page2 p {
+            margin-left: 4%;
+            font-size: 1.5rem;
+            margin-right: 7%;
+        }
+        .page2 h5 {
+            margin-top: 2%;
+            margin-left: 4%;
+            font-size: x-large;
+            font-style: oblique;
+        }
+        .page2 h6 {
+            margin-top: 1.5%;
+            font-size: 1.5em;
+            margin-left: 4%;
+            position: static;
+        }
+        .page2 #p1 {
+            margin-top: 2%;
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 16%;
+            margin-right: 40%;
+        }
+        .page2 #hd1 {
+            margin-top: 7%;
+            font-size: 1.5em;
+            margin-left: 4%;
+            position: static;
+        }
+        .page2 #p2 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-top: 7.3%;
+            margin-left: 16%;
+            margin-right: 40%;
+        }
+        .page2 #hd2 {
+            margin-top: 8%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: static;
+        }
+        .page2 #p3 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-top: 8.3%;
+            margin-left: 18%;
+            margin-right: 40%;
+        }
+        .page2 img {
+            animation: scrollLeftToRight 5s linear infinite;
+        }
+        @keyframes scrollLeftToRight {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        .page3 {
+            height: 520px;
+        }
+        .page3 #img1 {
+            margin-left: 3%;
+            margin-top: 10%;
+            position: static;
+        }
+        .page3 #img1:hover {
+            transform: scale(1.1);
+        }
+        .page3 #hd3 {
+            margin-top: 11.5%;
+            font-size: 1.3em;
+            margin-left: 48%;
+            position: absolute;
+        }
+        .page3 #p4 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-top: 11.7%;
+            margin-left: 59.2%;
+            margin-right: 2%;
+        }
+        .page3 #hd4 {
+            margin-top: 18.5%;
+            font-size: 1.3em;
+            margin-left: 48%;
+            position: absolute;
+        }
+        .page3 #p5 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-top: 20.8%;
+            margin-left: 59.2%;
+            margin-right: 2%;
+        }
+        .page3 #hd5 {
+            margin-top: 28.5%;
+            font-size: 1.3em;
+            margin-left: 48%;
+            position: absolute;
+        }
+        .page3 #p6 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-top: 30.8%;
+            margin-left: 59.2%;
+            margin-right: 2%;
+        }
+        #img2 {
+            margin-left: 4%;
+            width: 1230px;
+            height: 550px;
+        }
+        .page4 {
+            background-color: #4c525227;
+            height: 1300px;
+        }
+        .page4 h1 {
+            padding: 3%;
+            font-size: 4em;
+            margin-left: 4%;
+        }
+        .page4 #p7 {
+            font-size: 1.5em;
+            margin-left: 4%;
+            margin-right: 8%;
+        }
+        .page4 #hd6 {
+            margin-top: 3%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: absolute;
+        }
+        .page4 #p8 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 15.2%;
+            margin-right: 3%;
+            margin-top: 3.3%;
+        }
+        .page4 #hd7 {
+            margin-top: 9%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: absolute;
+        }
+        .page4 #p9 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 20%;
+            margin-right: 3%;
+            margin-top: 9.3%;
+        }
+        .page4 #hd8 {
+            margin-top: 14%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: absolute;
+        }
+        .page4 #p10 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 20%;
+            margin-right: 3%;
+            margin-top: 14.3%;
+        }
+        .vido {
+            margin-top: 23%;
+            margin-left: 8%;
+        }
+        .page4 #hd9 {
+            margin-top: 3%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: absolute;
+        }
+        .page4 #p11 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 19%;
+            margin-right: 3%;
+            margin-top: 3.3%;
+        }
+        .page4 #hd10 {
+            margin-top: 8%;
+            font-size: 1.3em;
+            margin-left: 4%;
+            position: absolute;
+        }
+        .page4 #p12 {
+            font-size: 1.2em;
+            position: absolute;
+            margin-left: 22.7%;
+            margin-right: 3%;
+            margin-top: 8.3%;
+        }
+        .page5 h1 {
+            margin-top: 3%;
+            font-size: 4em;
+            margin-left: 4%;
+        }
+        .page5 #p13 {
+            margin-top: 2%;
+            font-size: 1.5em;
+            margin-left: 4%;
+            margin-right: 8%;
+        }
+        .page5 h3 {
+            margin-top: 3%;
+            margin-left: 4%;
+            font-size: 150%;
+        }
+        .page5 .cont {
+            position: absolute;
+            top: 610%;
+            Left: 7%;
+            transform: translate(-50% ,- 50%);
+            width: 1050px;
+            height: 480px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .page5 .cont .imagebox img {
+            width: 100%;
+            height: 100%;
+        }
+        .page5 .cont .imagebox {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            transition: .5s;
+        }
+        .page5 .cont .imagebox img {
+            width: 100%;
+            height: 100%;
+        }
+        .page5 .cont .content {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: #1d304c;
+            padding: 100px 50px;
+            box-sizing: border-box;
+            transform-origin: left;
+            transition: .5s;
+            transform: perspective(600px) rotateY(90deg);
+        }
+        .page5 .cont .content ul {
+            margin: 10px 0;
+            padding: 5% 0;
+            color: #fff;
+            padding-left: 1%;
+            font-size: 40px;
+        }
+        .page5 .cont:hover .content {
+            transform: perspective(600px) rotateY(0deg);
+        }
+        .page5 .cont:hover .imagebox {
+            transform: perspective(600px) translateX(50%);
+        }
+        .page5 #hd10 {
+            margin-top: 40%;
+            margin-left: 4%;
+            font-size: 150%;
+        }
+        .page5 #hd11 li {
+            font-size: 1.2em;
+            padding: 1.7%;
+            margin-left: 4.8%;
+        }
+        .page5 #p14 {
+            font-size: 1.1em;
+            position: absolute;
+            margin-left: 17.3%;
+            margin-right: 3%;
+            margin-top: 1.8%;
+        }
+        .page5 #p15 {
+            font-size: 1.1em;
+            position: absolute;
+            margin-left: 21%;
+            margin-right: 3%;
+            margin-top: 6.9%;
+        }
+        .page5 #p16 {
+            font-size: 1.1em;
+            position: absolute;
+            margin-left: 20%;
+            margin-right: 3%;
+            margin-top: 12.1%;
+        }
+        .page5 #p17 {
+            font-size: 1.1em;
+            position: absolute;
+            margin-left: 22%;
+            margin-right: 3%;
+            margin-top: 17.1%;
+        }
+
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#news">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="#community">Tech Community</a></li>
+                        <li><a href="#tools">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+
+                <a href="#" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>           
+
+    <div class="page1">
+        <h1>Privacy and Security</h1>
+        <h2> 1.Data Protection <br> 2.User Control <br> 3.Compliance</h2>
+    </div>
+    <div class="page2">
+        <h1>Data protection</h1>
+        <p>Data protection refers to the practices, policies, and procedures put in place to safeguard data from unauthorized access, corruption, loss, or theft. It encompasses various measures designed to ensure that data remains secure and private throughout its lifecycle, from collection and storage to use and disposal.</p>
+        <h5>Key aspects of data protection include:</h5>
+        <img  src="images/img28.png" alt="" height="400px" width="500px" style="float:right">
+        <p id="p1">Ensuring that personal and sensitive information is collected, used, and stored in compliance with relevant laws and regulations. This includes obtaining consent for data collection, providing individuals with access to their data, and implementing measures to protect privacy.</p>
+        <h6>Data Privacy:</h6>
+        <p id="p2">Implementing technical and organizational measures to protect data from unauthorized access, alteration, or destruction. This includes encryption, access controls, firewalls, and regular security audits.</p>
+        <h6 id="hd1">Data Security:</h6>
+        <p id="p3">Collecting only the data that is necessary for a specific purpose and limiting access to that data to authorized personnel only. This helps reduce the risk of exposure and misuse.</p>
+        <h6 id="hd2">Data Minimization:</h6>
+    </div>
+    <div class="page3">
+        <img id="img1" src="images/img29.jpeg" alt="" height="400px" width="570px" style="float:left">
+        <h6 id="hd3">Data Integrity:</h6>
+        <p id="p4">Ensuring that data is accurate, complete, and reliable throughout its lifecycle. Measures such as data validation and error checking help maintain data integrity.</p>
+        <h6 id="hd4">Awareness <br> and Training:</h6>
+        <p id="p5">Educating employees about data protection policies and best practices to reduce human errors that could compromise data security.</p>
+        <h6 id="hd5">Data Retention <br> and Disposal:</h6>
+        <p id="p6">Establishing guidelines for how long data should be retained based on legal requirements and business needs. Secure disposal methods ensure that data cannot be recovered once it is no longer needed.</p>
+    </div>
+    <img id="img2" src="images/img30.png" alt="">
+    <div class="page4">
+        <h1>User Control</h1>
+        <p id="p7">User Control refers to the capability and mechanisms within a system, application, or device that allow users to influence and manage their interactions, preferences, and settings. It encompasses various features and options designed to provide users with autonomy over their experience. Key aspects of user control include:</p>
+        <h6 id="hd6">Customization:</h6>
+        <p id="p8">Users can modify the interface and functionality to suit their preferences, such as adjusting themes, layouts, and controls.</p>
+        <h6 id="hd7">Settings Management:</h6>
+        <p id="p9"> Users have access to manage personal settings and preferences, including notification settings, privacy controls, and accessibility features.</p>
+        <h6 id="hd8">Privacy and Security:</h6>
+        <p id="p10"> Users can control how their personal data is collected, used, and shared, as well as manage permissions for various applications and services.</p>
+        <div class="vido">
+            <iframe width="1100" height="515" src="https://www.youtube.com/embed/MXuk-fdbr0A?si=uN0qtEunko8DY6ZV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <h6 id="hd9">Functional Controls:</h6>
+        <p id="p11">Users can enable, disable, or adjust features and functionalities according to their needs, including error handling and process management.</p>
+        <h6 id="hd10">Feedback and Interaction:</h6>
+        <p id="p12">Users have options to interact with the system in ways that best suit their needs, including customizing input methods and feedback preferences.
+        </p>
+    </div>
+    <div class="page5">
+        <h1>Compliance</h1>
+        <p id="p13">Compliance refers to the process of ensuring that an individual, organization, or system adheres to applicable laws, regulations, standards, and internal policies. It involves a range of activities and practices designed to maintain lawful and ethical conduct, meet industry-specific requirements, and support organizational integrity.</p>
+        <h3>Key Aspects of Compliance:</h3>
+        <div class="cont">
+            <div class="imagebox">
+            <img  src="images/img31.jpg" alt="" >
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Legal Compliance</li>
+                    <li>Industry Standards</li>
+                    <li>Corporate Governance</li>
+                    <li>Risk Management</li>
+                    <li>Technical Compliance</li>
+                    <li>Ethical Practices</li>
+                </ul>
+            </div>
+        </div>
+        <h3 id="hd10">Importance of Compliance:</h3>
+        <p id="p14">Mitigates the risk of legal penalties, fines, and sanctions by ensuring adherence to laws and regulations.</p>
+        <p id="p15"> Supports consistent quality, safety, and operational standards through adherence to established practices and procedures.</p>
+        <p id="p16">Builds trust with customers, partners, and stakeholders by ensuring that operations are conducted in a transparent and accountable manner.</p>
+        <p id="p17">Enhances the organization’s reputation by demonstrating a commitment to ethical behavior and lawful conduct.</p>
+        <ul id="hd11">
+            <li>Legal Protection:</li>
+            <li>Operational Efficiency:</li>
+            <li>Trust and Credibility:</li>
+            <li>Reputation Management:</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about" style="text-align: left;">
+                <h3>About TechInnovate</h3>
+                <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a ref="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+                <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+                <a ref="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#Resources">Resources</a></li>
+                    <li><a href="#innovation">Innovation</a></li>
+                    <li><a href="#innovation">Privacy Policy</a></li>
+    
+    
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Tech Topics</h3>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Tech tools</a></li>
+    
+                </ul>
+            </div>
+            <div class="footer-section contact" style="text-align: left;">
+                <h3>Contact Us</h3>
+                <p>Email: contact@techinnovate.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function signUp() {
+    alert("Welcom to Tech Innovate! Stay tuned for updates.");
+    }
+    
+    </script>
+</body>
+</html>

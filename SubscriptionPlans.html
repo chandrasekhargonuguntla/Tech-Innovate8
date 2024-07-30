@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>TechInnovate</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:'Poppins','sansserif'
+}
+
+.body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}            
+#btn {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+.main1{
+            background: url(images/img14.webp);
+            height:400px;
+            width:100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+           padding-left:70px;
+           padding-top:100px;
+            color:white;
+            padding:50px;
+            
+    top: 0;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        
+        .main1 button{
+            margin-top:70px;
+            width:250px;
+            height:50px;
+            background-color:blue;
+            color: white;
+            border-radius:30px;
+            border: none;
+            font-size:20px;
+        }
+        .main1 button:hover{
+            background:white;
+            color: black;
+            transform:scale(1.2);
+        
+        }
+        .main2{
+            margin-top:70px;
+            margin-left:px;
+            display: flex;
+            justify-content: center;
+        }
+        .main3 img:hover{
+            transform:scale(1.1);
+        }
+        .main3 h1{
+            margin-left:90px;
+        }
+
+        .main4{
+            margin-left:30px;
+            margin-top:50px;
+        }
+        .main5{
+            display: flex;
+            justify-content: space-around;
+            margin-top:100px;
+            position: relative;
+           
+        }
+        
+            
+
+        .main6{
+            background-color: rgb(162, 234, 247);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;
+           
+            
+        }
+        .main6:hover{
+            transform: scale(1.1);
+        }
+        .main6 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main6 h2{
+            text-align: center;
+        }
+        .main6 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main6 button{
+            background:rgb(2, 153, 253) ;
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+          position: absolute;
+          margin-top:-18px;
+           
+           
+        }
+        .main6 button:hover{
+            background: white;
+        }
+        .main7{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main7 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main7 h3{
+            text-align: center;
+            margin-top:2px;
+        }
+        .main71{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+        }
+        .main71 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main71 h3{
+            text-align: center;
+            margin-top:2px;
+        }
+
+
+        .main8{
+            background-color:rgb(247, 247, 179);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;
+
+            
+        }
+
+        .main8:hover{
+            transform: scale(1.1);
+        }
+        .main8 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main8 h2{
+            text-align: center;
+        }
+        .main8 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main8 button{
+            background:rgb(248, 248, 3) ;
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+            position: absolute;
+          margin-top:-18px;
+           
+        }
+        .main8 button:hover{
+            background: white;
+        }
+        .main9{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main9 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main9 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+        .main91{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+        }
+        .main91 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main91 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+
+        .main10{
+            background-color: rgb(248, 163, 220);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;
+           
+        }
+        .main10:hover{
+            transform: scale(1.1);
+        }
+        .main10 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main10 h2{
+            text-align: center;
+        }
+        .main10 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main10 button{
+            background:rgb(247, 1, 193) ;
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+            position: absolute;
+            margin-top:-18px;
+            text-align: center;
+           
+        }
+        .main10 button:hover{
+            background:white;
+        }
+        .main11{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main11 i{
+           font-size:20px;
+           background: rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main11 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+
+        .main112{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+            
+        }
+        .main112 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main112 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+        .bios {
+    height: 1200px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 200px;
+   
+}
+
+.bios1, .bios2, .bios3 {
+    margin-left: 100px;
+    background: linear-gradient(rgb(232, 242, 250), rgb(81, 238, 81));
+    align-items: center;
+    margin-top: 30px;
+    height: 305px;
+    width: 80%;
+    display: flex;
+    column-gap: 50px;
+    border-radius: 20px;
+    padding: 0 10px;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.bios1:hover, .bios2:hover, .bios3:hover {
+    transform: scale(1.05);
+}
+.bios h5 {
+    font-size: 20px;
+}
+.bios p {
+    font-size: 18px;
+    padding-top: 10px;
+
+}
+
+.bios img {
+    border-radius: 20px;
+}
+
+.btn button{
+    background:blue;
+    color: white;
+    margin-left:600px;
+    height:50px;
+    width:200px;
+    font-size:20px;
+    border-radius:12px;
+    margin-bottom:50px;
+    border: none;
+}
+
+.btn button:hover{
+    background:white;
+    color:black;
+    border:1px solid black;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+.icon a:hover{
+    
+}
+
+
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/techlogo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="news.html">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="communityhome.html">Tech Community</a></li>
+                        <li><a href="Tech Tools.html">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+
+                <a href="SubscriptionPlans.html" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>
+
+ <div class="main1">
+    <h1>One-time recharge for 1 full year</h1><br>
+    <h3>Recharge with a ₹3599 plan for a year full of<br>
+     digital delights.</h3>
+   <a href="#sss"> <button>All Free Plans</button></a>
+   <a href="premium Plans.html"><button>premium Plans</button></a>
+</div>
+
+<div class="main2">
+<div class="main3">
+    <img src="images/img15.jpg"  height="250px" width="250px" style="border-radius:50%;"><br>
+    <h1>Dr.siri</h1>
+</div>
+<div class="main4">
+    <h1>Enjoy unlimited calls, SMS services and high-speed<br>
+        internet with our best prepaid plans</h2><br>
+    <h4> Refuel your digital life with Jio’s prepaid plans and experience uninterrupted connectivity<br>
+        no matter where you are . tech offers the best prepaid mobile recharge plans that suit your<br>
+         budget and requirements. Just recharge and start enjoying Autopay so that you do not <br>
+         have to enter details every month and enjoy seamless connectivity.</h1>
+</div>
+</div>
+<div class="main5" id="sss">
+<div class="main6">
+        <h1>Login Now/Free For Month</h1><br>
+        <h2>$00.00</h2>
+        <p>Per Month</p><br>
+       <a href="Signup.html"><button>Sign UP</button></a>
+   <div class="main7">
+       <i class="fa-solid fa-check"></i>
+   <div class="sub">
+           <h3>Free Data 30 days</h3>
+   </div>      
+   </div>
+   <div class="main7">
+       <i class="fa-solid fa-check"></i>
+   <div class="sub">
+           <h3>Free SMS 30 days</h3>
+   </div>      
+   </div>
+   <div class="main7">
+       <i class="fa-solid fa-check"></i>
+   <div class="sub">
+           <h3>Free Calls 30 days</h3>
+   </div>      
+   </div>
+   <div class="main7">
+       <i class="fa-solid fa-check"></i>
+   <div class="sub">
+           <h3>Free Apps For 30 days</h3>
+   </div>      
+   </div>
+   <div class="main71">
+       <i class="fa-solid fa-check"></i>
+   <div class="sub">
+           <h3>Free Updates 30 days</h3>
+   </div>      
+   </div>
+</div>       
+   <div class="main8">
+        <h1>Free Prime Membership/For Month</h1><br>
+        <h2>$00.00</h2>
+        <p>Per Month</p><br>
+     <a href="Signup.html"><button>Sign UP</button></a>
+       <div class="main9">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>No Fees 30 Days</h3>
+       </div>      
+       </div>
+       <div class="main9">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3> Prime Membership Vouchers </h3>
+       </div>      
+       </div>
+       <div class="main9">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Prime Vouchers as Gifts/Transfers</h3>
+       </div>      
+       </div>
+       <div class="main9">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Other Benefits</h3>
+       </div>      
+       </div>
+       <div class="main91">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Limitations</h3>
+       </div>      
+       </div> 
+</div>
+<div class="main10">
+        <h1>Digital life full of delights/for month</h1><br>
+        <h2>$00.00</h2>
+        <p>Per Month</p><br>
+       <a href="Signup.html"><button>Sign UP</button></a>
+       <div class="main11">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Top-selling postpaid plans</h3>
+       </div>      
+       </div>
+       <div class="main11">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Non-stop entertainment</h3>
+       </div>      
+       </div>
+       <div class="main11">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Share data with family</h3>
+       </div>      
+       </div>
+       <div class="main11">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>One plan, many benefits</h3>
+       </div>      
+       </div>
+       <div class="main112">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Already a tech Postpaid user?</h3>
+       </div>      
+       </div>
+</div>
+</div>
+
+<div class="bios">
+<div class="bios1">
+<img src="images/img2.jpg" width="400px" height="300px">
+
+<div class="biosA">
+   <h5>Unlimited calls & SMS, International Roaming, and more with Jio Postpaid</h5>
+       <p>The Jio Postpaid plan is the one-stop solution for all your digital needs. Enjoy connected living with unlimited calls & SMS and high-speed internet through India’s only True 5G network. That's not all. You get a FREE subscription to the top OTT channels like Netflix, Amazon Prime, etc., and binge-watch all the trending content for FREE. Also, access our bouquet of premium Jio apps like JioCinema, JioTV, JioGames, JioNews, and more.
+           What's more, you can also share this digital bliss with Order your new postpaid SIM online and get it home-delivered for FREE.
+           </p>
+</div>
+</div>
+<div class="bios2">
+<div class="biosA">
+   <h5>Jane Smith - Editor-in-Chief</h5>
+  <p> Jane is an accomplished journalist with a background in computer science and over 15 years in tech journalism. As the Editor-in-Chief of Tech Trend, she ensures the quality and integrity of all content published on the platform. Jane's keen eye for detail and deep understanding of technology trends make her an invaluable asset to the team. Her passion for storytelling and commitment to accuracy set the standard for the editorial team.</p>
+</div>
+<img src="images/img6.jpeg" width="400px" height="300px">
+
+</div>
+
+<div class="bios3">
+<img src="images/img7.jpeg" width="400px" height="300px">
+
+<div class="biosA">
+   <h5>Mike Johnson - Senior Technology Analyst</h5>
+  <p>Mike is a seasoned technology analyst with a specialization in data science and machine learning. With a Ph.D. in Computer Science, he brings a wealth of knowledge and analytical skills to Tech Trend. Mike's role involves analyzing industry trends, conducting in-depth reviews, and providing expert insights on emerging technologies. His analytical approach and ability to simplify complex concepts make his articles a favorite among readers.</p>
+</div>
+</div>
+</div>
+<iframe style="margin-left:250px;" width="860" height="415" src="https://www.youtube.com/embed/B2Nx-DWeMMM?si=WL6q4OF2_KV5nuvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+<br><br>
+<div class="btn"> 
+   <a href="premium Plans.html"> <button> premium Plans</button></a>
+</div>
+ 
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about" style="text-align: left;">
+            <h3>About TechInnovate</h3>
+            <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>Tech Topics</h3>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="technews.html">Articles</a></li>
+                <li><a href="communityhome.html">Community</a></li>
+                <li><a href="Tech Tools.html">Tech tools</a></li>
+                <li><a href="Privacy and Security.html">Privacy police</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact" style="text-align: left;">
+            <h3>Contact Us</h3>
+            <p>Email: contact@techinnovate.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}   
+    
+/**product1**/
+        .product1 h1 {
+            margin-top: 3%;
+            font-size: 3.5em;
+            margin-left: 5%;
+        }
+        .product1 p {
+            margin-top: 2%;
+            font-size: 1.2em;
+            margin-left: 4%;
+            margin-right: 5%;
+        }
+        .product1 #im {
+            height: 10%;
+            width: 25%;
+            margin-left: 6%;
+        }
+        .product1   #im1 {
+            position: absolute;
+            height: 35%;
+            width: 30%;
+            padding-top: 6%;
+            margin-left: 67%;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .product1 .produc1 h3 {
+            margin-left: 1%;
+            color: black;
+        }
+        .product1 .produc1 {
+            display: flex;
+            margin-left: 10%;
+            color: gray;
+        }
+        .product1 .produc1 .vivo {
+            position: absolute;
+            margin-left: 35%;
+        }
+        .product1 .produc1 .laptop {
+            position: absolute;
+            margin-left: 67%;
+        }
+/**product2**/
+        .product2 #im  {
+            margin-top: 5%;
+            height: 280px;
+            margin-left: 9.5%;
+        }
+        .produc2 {
+            display: flex;
+            color: gray;
+        }
+        .produc2 .EarFun h3 {
+            margin-right: 70%;
+            color: black;
+        }
+        .produc2  .EarFun {
+            position: absolute;
+            margin-left: 7%;           
+        } 
+        .produc2  .Watch h3 {
+            margin-left: 1%;
+            margin-right: 55%;
+            color: black;
+        }
+        .produc2 .Watch {
+            position: absolute;
+            margin-left: 42%;  
+        }
+        .produc2 .airbuds h3 {
+            color: black;
+        }
+        .produc2 .airbuds {
+            position: absolute;
+            margin-left: 74%;
+            margin-right: 1%;
+        }
+        #bn {
+            background-color:  #55b6ca80;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 25%;
+            margin-left: 50%;
+        }
+        #bn a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #bn :hover {
+            color: rgb(49, 47, 47);
+        }
+/**product3**/
+        .product3 h1 {
+            font-size: 3.5em;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .product3 p {
+            margin-top: 3%;
+            font-size: 1.2em;
+            margin-left: 4%;
+            margin-right: 6%;
+        }
+        .comparison-table {
+            margin-top: 5%;
+            width: 100%;
+            font-size: 1.5em;
+            overflow-x: auto;
+        }
+        .comparison-table {
+            min-width: 41rem;
+            table-layout: fixed
+        }
+        .comparison-table  {
+            position: relative;
+            text-align: center
+        }
+        .secondary img {
+            display: block;
+            height: 50%;
+            width: 50%;
+            margin-left: 20%;
+            padding-left: 15%;
+        }
+        .table-bordered th, .table-bordered td {
+            border: 1px solid #ffffff;
+        }
+/**Product4**/
+        .product4 h1 {
+            font-size: 3em;
+            margin-left: 5%;
+            margin-top: 10%;
+            margin-bottom: 2%;
+        }
+        .product4 #pro1 {
+            position: absolute;
+            height: 45%;
+            width: 30%;
+            margin-left: 3%;
+        }
+        .product4 #pro2 {
+            position: absolute;
+            height: 45%;
+            width: 30%;
+            margin-left: 35%;
+        }
+        .product4 #pro3 {
+            position: absolute;
+            height: 45%;
+            width: 30%;
+            margin-left: 67%;
+        }
+        .product4 .specs {
+            display: flex;
+            margin-top: 25%;
+            font-size: 2em;
+        }
+        .product4 .specs #A {
+            position: absolute;
+            margin-left: 7%;
+        }
+        .product4 .specs #B {
+            position: absolute;
+            margin-left: 46%;
+        }
+        .product4 .specs #C {
+            position: absolute;
+            margin-left: 78%;
+        }
+        .product4 .produc3 {
+            display: flex;
+            font-size: 1.3em;
+            color: #979797;
+            margin-top: 5%;
+        }
+        .product4 .produc3 .Mobile {
+            position: absolute;
+            margin-left: 1%;
+        }
+        .product4 .produc3 .LP {
+            position: absolute;
+            margin-left: 34%;
+            margin-right: 34%;
+        }
+        .product4 .produc3 .buds {
+            position: absolute;
+            margin-left: 70%;
+        }
+/**product5**/
+        .product5 h1 {
+            margin-top: 30%;
+            font-size: 4em;
+            margin-left: 5%;
+        }
+        .product5 h2 {
+            font-size: 2em;
+            margin-left: 5%;
+        }      
+        .box{
+            width:1130px;
+            padding-left: 20%;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            padding: 50px;
+            margin: 35px;
+            cursor: pointer;
+        }
+        .profile-img{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .profile-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+        .name-user{
+            display: flex;
+            flex-direction: column;
+        }
+        .name-user strong{
+            color: #3d3d3d;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .name-user span{
+            color: #979797;
+            font-size: 0.8rem;
+        }
+        .reviews{
+            color: #f9d71c;
+        }
+        .box-top{
+            
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .client-comment p{
+            font-size: 1.1rem;
+            color: #4b4b4b;
+        }
+        .box:hover{
+            transform: translateY(-10px);
+            transition: all ease 0.3s;
+        }
+        ::selection{
+            color: #ffffff;
+            background-color: #c51818;
+        }
+        #bnt {
+            background-color:  #55b6ca8e;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 40%;
+        }
+        #bnt a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #bnt :hover {
+            color: rgb(49, 47, 47);
+        }
+        #butt {
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 500px;
+            background-color:  #55b7ca;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+        }
+        #butt a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #butt:hover{
+            color: white;
+            background-color: gray;
+        }    
+/**FOOTER**/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 77px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="news.html">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="communityhome.html">Tech Community</a></li>
+                        <li><a href="Tech Tools.html">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+
+                <a href="SubscriptionPlans.html" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>           
+
+    <div class="product1">
+    <h1>product showcase</h1>
+    <p>Creating a website to showcase my products was a breeze with Mobirise. The drag-and-drop feature made it incredibly easy to design a visually appealing platform. However, I encountered some challenges with customizing certain elements, which required some additional research. Overall, the process was smooth, and I was able to achieve a professional-looking product showcase.
+    </p>
+
+    <h1>New Releases</h1>
+
+    <img id="im1" src="images/img1.jpeg" alt="">
+    <img id="im" src="images/img2.webp" alt="">
+    <img id="im" src="images/img3.webp" alt="">
+
+    <div class="produc1">
+        <div class="tablet">
+            <h3>Galaxy Tab S9 FE <br> <i class="fa-solid fa-indian-rupee-sign"> 38999.00</i></h3>
+            <ul>
+                <li>Dimensions : 248.6 x 179.5 x 7mm</li>
+                <li>OS : iPadOS 17</li>
+                <li>Storage : 64GB / 256GB</li>
+                <li>microSD slot : No</li>
+                <li>Rear camera: 12MP</li>
+                <li>Battery : Up to 10 hours</li>
+            </ul>
+        </div>
+        <div class="vivo">
+            <h3>V29 12GB+256GB Majestic Red <i class="fa-solid fa-indian-rupee-sign"> 36,999.00</i></h3>
+            <ul>
+                <li>Ultra Slim 3D Curved Display</li>
+                <li>50MP Eye AF Group Selfie Camera</li>
+                <li>80W FlashCharge</li>
+                <li>Night Portrait with Smart Aura Light</li>
+                <li>Wedding Style Portrait</li>
+                <li>50MP OIS Night Camera</li>
+            </ul>
+        </div>
+        <div class="laptop">
+            <h3>Customise your 15 <br> MacBook Air - Space Grey <i class="fa-solid fa-indian-rupee-sign"> 1,36,999.00</i></h3>
+            <ul>
+                <li>Apple M3 chip with 8-core CPU</li>
+                <li>256GB SSD storage</li>
+                <li>8GB unified memory</li>
+                <li>MagSafe 3 charging port</li>
+                <li>Two Thunderbolt / USB 4 ports</li>
+                <li>35W Dual USB-C Port Power Adapter</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="product2">
+    <img id="im" src="images/img5.jpg" alt="">
+    <img id="im" src="images/img6.jpg" alt="">
+    <img id="im" src="images/img4.webp" alt="">
+    </div>
+    <div class="produc2">
+        <div class="EarFun">
+            <h3>EarFun Wave Pro Active Noise Canceling Headphones, Wireless Over Ear Bluetooth Headphones, LDAC Hi-Res Sound, 5 Mics AI Clear Call, 80H Playtime, Multipoint Connection, Comfort Fit, Custom EQ via App <i class="fa-solid fa-indian-rupee-sign"> 3,999.00</i></h3>
+            <ul>
+                <li>Brand : EarFun</li>
+                <li>Colour : Black</li>
+                <li>Ear Placement : Over Ear</li>
+                <li>Form Factor : Over Ear</li>
+                <li>Noise Control : Active Noise Cancellation</li>
+               
+            </ul>
+        </div>
+        <div class="Watch">
+            <h3>mi Smart Watch for Men & Women, Bluetooth Smartwatch Touch Screen Bluetooth Smart Watches for Android iOS Phones Wrist Phone Watch, Women - Royal Black ID116 Smart Watch - Black <br><i class="fa-solid fa-indian-rupee-sign"> 1,999.00</i></h3>
+            <ul>
+                <li>Operating System : Android,Ios</li>
+                <li>Special Feature	: Notifications</li>
+                <li>Connectivity Technology	: Bluetooth</li>
+                <li>Shape : Square</li>
+               
+            </ul>
+        </div>
+        <div class="airbuds">
+            <h3>AirPods Pro (2nd generation) <i class="fa-solid fa-indian-rupee-sign"> 26,999.00</i></h3>
+            <ul>
+                <li>Brand : Apple</li>
+                <li>Colour : White</li>
+                <li>Form Factor : In Ear</li>
+                <li>Noise Control : Active Noise Cancellation</li>
+                <li>Headphones Jack : lightning</li>
+                
+            </ul>
+        </div>
+    </div>
+    <button id="bn" ><a href="New Releases.html">View More</a></button>
+<!--product3-->
+<div class="product3">
+    <h1>product comparisons</h1>
+    <p>Product comparison is the process of evaluating and contrasting two or more similar products to determine their features, specifications and performance. Product comparisons can help consumers compare the product and make informed purchasing decisions by highlighting the strengths and weaknesses.</p>
+</div>
+
+    <div class="comparison-table">
+        <table class="table-bordered">
+            <thead class="secondary">
+                <tr>
+                    <td></td>
+                    <td>
+                    <a><img src="images/img8.jpg" alt="Apple iPhone Xs Max"></a>
+                    </td>
+                    <td>
+                    <a><img src="images/img7.jpg" alt="Google Pixel 3 XL"></a>
+                    </td>
+                </tr>
+            </thead>
+                <tr class="secondary">
+                    <th class="text-uppercase">Brand</th>
+                    <td><span class="text-dark">Google Pixel 3 XL</span></td>
+                    <td><span class="text-dark">Samsung Galaxy S10</span></td>
+                </tr>
+                <tr>
+                    <th>Performance</th>
+                    <td>Octa Core</td>
+                    <td>Octa Core</td>
+                </tr>
+                <tr>
+                    <th>Display</th>
+                    <td>6.3-inch</td>
+                    <td>6.4-inch</td>
+                </tr>
+                <tr>
+                    <th>Storage</th>
+                    <td>64 GB</td>
+                    <td>128 GB</td>
+                </tr>
+                <tr>
+                    <th>Camera</th>
+                    <td>12.2-megapixel</td>
+                    <td>12,16,12-megapixel</td>
+                </tr>
+                <tr>
+                    <th>Battery</th>
+                    <td>3,430 mAh</td>
+                    <td>4,100 mAh</td>
+                </tr>
+            
+                <tr>
+                    <th>Operating system</th>
+                    <td>Android v9.0 Pie </td>
+                    <td>Android v9.0 with Samsung One UI </td>
+                </tr>
+                <tr>
+                    <th>Launch date</th>
+                    <td>November 1, 2018 (Official)</td>
+                    <td>February 20, 2019 (Official)</td>
+                </tr>
+                <tr>
+                    <th>Network</th>
+                    <td>4G: Available 3G: Available, 2G: Available</td>
+                    <td>4G: Available 3G: Available, 2G: Available</td>
+                </tr>
+                <tr>
+                    <th>Fingerprint sensor</th>
+                    <td>Back cover</td>
+                    <td>In-screen</td>
+                </tr>
+                <tr>
+                    <th>Processor</th>
+                    <td>Qualcomm Snapdragon 845 (2.5GHz octa-core)</td>
+                    <td>Octa-core Qualcomm Snapdragon 855</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>4 GB</td>
+                    <td>8 GB</td>
+                </tr>
+                <tr>
+                    <th>Internal memory</th>
+                    <td>64 GB</td>
+                    <td>128 GB</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> 15,999</td>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> 20,000</td>
+                </tr>             
+        </table>
+    </div>
+
+        <!--product4-->
+        <div class="product4">
+            <h1>Product Specifications</h1>
+            <img id="pro1" src="images/img13.webp" alt="">
+            <img id="pro2" src="images/img14.jpg" alt="">
+            <img id="pro3" src="images/img15.webp" alt="">
+    
+            <div class="specs">
+                <h3 id="A">Mobile phone</h3>
+                <h3 id="B">Laptop</h3>
+                <h3 id="C">Airbuds</h3>
+            </div>
+            <div class="produc3">
+                <div class="Mobile">
+                    <ul>
+                        <li>India Debut of Snapdragon 4 Gen 2 AE</li>
+                        <li>120Hz Big 17.2cm (6.79) FHD+ Display</li>
+                        <li>33W Fast Charging and 5030mAh Battery</li>
+                        <li>108MP Pro-grade Camera with Ring Flash</li>
+                        <li>Segment's Only Dual-Glass 5G Phone</li>
+                        <li>36 Months Lag Free Experience</li>
+                    </ul>
+                </div>
+                <div class="LP">
+                    <ul>
+                        <li>Core i7, AMD Ryzen 7 or higher with  2.3Ghz or  above,64 Bit</li>
+                        <li>16 GB DDR3 or higher protocol Ram With 233Mhz or more  speed</li>
+                        <li>Integrated Graphics or Any Graphics card  with 2 GB VRAM or Higher</li>
+                        <li>512 GB M.2 PCle NVMe solid state Drive +</li>
+                        <li>550 W or Higher</li>
+                        <li>Windows 10 Or Higher</li>
+                    </ul>
+                </div>
+                <div class="buds">
+                    <ul>
+                        <li>BT 5.3 Version</li>
+                        <li>BT range: 10m</li>
+                        <li>Play Time: About 7 hours</li>
+                        <li>Charging input: 5V.1A</li>
+                        <li>Total Play Time: 26 hours</li>
+                        <li>Standby Time: About 90 days</li>
+                        <li>Earbuds charging time: 1.5 hours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <!--product5-->
+    <div class="product5">
+        <h1>User Reviews</h1>
+        <h2> Top positive reviews</h2>
+        <!--BOX-1-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img9.png" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Jasmine H</strong>
+                        <span>@Jasmineweb</span>
+                    </div>
+                </div>
+                 <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <img src="images/img3.webp" height="200px" width="200px
+                " alt="">
+                <p>As of my last update, I don't have specific information on the Vivo T2X 5G. For the most accurate and up-to-date reviews, I recommend checking reputable tech websites such as The Verge, CNET, GSMArena, or TechRadar. These sites typically provide detailed reviews covering aspects like design, display quality, performance, camera capabilities, battery life, and software experience.</p>
+                <p>When reading reviews, it's beneficial to look for multiple opinions to get a well-rounded understanding of the device's strengths and weaknesses. Additionally, user reviews on platforms like Amazon or forums can offer insights into real-world usage experiences. This can help you determine if the Vivo T2X 5G aligns with your preferences and needs in a mobile phone.</p>
+            </div>
+        </div>
+        <button id="bnt" ><a href="Reviews.html">View More</a></button>
+
+        <button id="butt"><a href="#">Subscribe</a></button>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: left;">
+                    <h3>About TechInnovate</h3>
+                    <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+                <div class="icons">
+                    <p>Follow us on...</p><br>
+                    <a ref="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a ref="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product showcase.html">Products</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="innovationhub.html">Innovation</a></li>
+                        <li><a href="Privacy and Security.html">Privacy Policy</a></li>
+        
+        
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h3>Tech Topics</h3>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="technews.html">Articles</a></li>
+                        <li><a href="communityhome.html">Community</a></li>
+                        <li><a href="Tech Tools.html">Tech tools</a></li>
+        
+                    </ul>
+                </div>
+                <div class="footer-section contact" style="text-align: left;">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@techinnovate.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+            </div>
+        </footer>
+        </div>
+        <script>
+            function signUp() {
+        alert("Welcom to Tech Innovate! Stay tuned for updates.");
+        }
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="loginform.css">
+
+</head>
+<body>
+
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/images/logo.png" alt="Sample Image" class="responsive-image">
+            </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    
+
+ 
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+
+    const password = document.getElementById('password').value;
+
+    const message = document.getElementById('message');
+    
+   
+   
+    const validUsername = 'chandu';
+    const validPassword = '12345';
+
+    const validUsername1 = 'mahi';
+    const validPassword1 = '12345';
+
+    const validUsername2 = 'hari';
+    const validPassword2 = '12345';
+
+    const validUsername3 = 'lakshmi';
+    const validPassword3 = '12345';
+    
+    const validUsername4 = 'srikanth';
+    const validPassword4 = '12345';
+
+    const validUsername5 = 'vijayalaxmi';
+    const validPassword5 = '12345';
+
+    const validUsername6 = 'gnaneswar';
+    const validPassword6 = '12345';
+
+
+    const validUsername7 = 'saida';
+    const validPassword7 = '12345';
+    
+    if ((username === validUsername && password === validPassword) || (username === validUsername1 && password === validPassword1) || (username === validUsername2 && password === validPassword2)) {
+     message.style.color = 'green';
+        message.textContent = alert('Login successful!');
+        window.location.href="home.html";
+    
+    } else {
+     message.style.color = 'red';
+        message.textContent =alert('Invalid username or password.');
+    }
+     });
+    </script>
+</body>
+</html>

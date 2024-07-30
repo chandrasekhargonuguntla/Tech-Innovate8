@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: palegreen;
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}                                                                                                                                                                                                
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 15px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+        color: red;
+    }
+
+
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+
+.home{
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+
+.container .html{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/html.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px blueviolet solid;
+    text-align: center;
+    border-radius: 10px;
+}
+.container .html h1{
+    padding-top: 150px;
+}
+.container .html button{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.container .html button:hover{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: grey;
+}
+button a{
+    text-decoration: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 130px;
+}
+.container .php{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/php.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px blueviolet solid;
+    text-align: center;
+    border-radius: 10px;
+}
+.container .php h1{
+    padding-top: 150px;
+}
+.container .php button{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.container .php button:hover{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: grey;
+}
+
+
+.container .react{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/react.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px blueviolet solid;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.container .react h1{
+    padding-top: 150px;
+}
+.container .react button{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.container .react button:hover{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: grey;
+}
+
+.container .python{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/python.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px blueviolet solid;
+    text-align: center;
+    border-radius: 10px;
+}
+.container .python h1{
+    padding-top: 150px;
+}
+.container .python button{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.container .python button:hover{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: grey;
+}
+
+.container .java{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/java.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px blueviolet solid;
+    text-align: center;
+    border-radius: 10px;
+}
+.container .java h1{
+    padding-top: 150px;
+}
+.container .java button{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.container .java button:hover{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: grey;
+}

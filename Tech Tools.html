@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Tools</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}   
+
+        .page {
+            height: 990px;
+            background-size: cover;
+            background-image: no-repeat;
+            background-image: url(https://www.slj.com/binaries/content/gallery/Jlibrary/2022/02/2202-techtool-create-connect-f.jpg);
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .page h1 {
+            position: absolute;
+            font-size: 10em;
+            margin-left: 3%;
+           padding-top: 5%;
+          
+        }
+        
+        .page1 h1 {
+            margin-top: 3%;
+            font-size: 3em;
+            margin-left: 4%;
+        }
+        .page1 #h1 {
+            position: absolute;
+            font-size: 1.3em;
+            margin-left: 5%;
+            margin-top: 3%;
+        }
+        .page1 #p1 {
+            position: absolute;
+            font-size: 20px;
+            margin-top: 3.1%;
+            margin-left: 17.5%;
+        }
+        .page1 #p2 {
+            margin-left: 5%;
+            font-size: 20px;
+            margin-top: 7%;
+            margin-right: 10%;
+        }
+        
+        .page1 img  {
+            margin-top: 2%;
+            height: 360px;
+            width: 580px;
+            margin-right: 5%;
+            transform: translateX(-100%);
+            animation: slideIn 2s forwards;
+        }
+        @keyframes slideIn {
+            to {
+                transform: translateX(0);
+            }
+        }
+        .page1 .Education {
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 50%;
+        }
+        .page1 .Education li {
+            font-size: 19px;
+            padding: 1%;
+        }
+        .page1 #code {
+            margin-left: 6%;
+            height: 330px;
+            width: 550px;
+        }
+        .page1 .code  {
+            margin-top: 5%;
+            position: absolute;
+            margin-left: 55%;
+            font-size: 20px;
+            margin-right: 6%;
+        }
+        .page1 .code li {
+            padding: 2%;
+        }
+        .page1 #h2 {
+            position: absolute;
+            margin-top: 29%;
+            font-size: 3.3em;
+            margin-left: 5%;
+        }
+        .page1 #Systems {
+            margin-top: 33%;
+            margin-right: 6%;
+            height: 240px;
+            width: 480px;
+        }
+        .page1 .Systems {
+            margin-top: 35%;
+            position: absolute;
+            margin-left: 6%;
+            font-size: 20px;
+            margin-right: 10%;
+        }
+        .page1 .Systems li {
+            padding: 1.5%;
+        }
+        .page1 #h3 {
+            position: absolute;
+            margin-top: 56%;
+            font-size: 3.3em;
+            margin-left: 10%;
+        }
+        .page1 #h4 {
+            position: absolute;
+            margin-top: 56%;
+            font-size: 3.3em;
+            margin-left: 53%;
+        }
+        .page1 #img3 {
+            margin-top: 39%;
+            margin-left: 5%;
+            height: 335px;
+            width: 530px;
+        }
+        .page1 #img4 {
+            margin-top: 15%;
+            margin-right: 5%;
+            height: 335px;
+            width: 530px;
+        }
+        .page1 .Tools {
+            margin-top: 94%;
+            position: absolute;
+            margin-left: 7%;
+            font-size: 20px;
+            margin-right: 10%;
+        }
+        .page1 .Tools li {
+            padding: 1.5%;
+        }
+        .page1 .Design {
+            margin-top: 94%;
+            position: absolute;
+            margin-left: 56%;
+            font-size: 20px;
+            margin-right: 5%;
+        }
+        .page1 .Design li {
+            padding: 1.5%;
+        }
+        .page2 {
+            height: 2350px;
+        }
+        .page2 h1 {
+            position: absolute;
+            font-size: 4em;
+            padding-top: 110%;
+            margin-left: 5%;
+        }
+        .page2 p {
+            position: absolute;
+            font-size: 1.4em;
+            padding-top: 118%;
+            margin-right: 5%;
+            margin-left: 6%; 
+        }
+        
+        .page2 .vido {
+            position: absolute;
+            margin-top: 127%;
+            margin-left: 12%;
+        }
+        .page2 #p3 {
+            margin-top: 50%;
+        }
+        .page3 {
+            margin-top: 2%;
+            height: 1338px;
+            background-color: antiquewhite;
+        }
+        .page3 h1 {
+            padding: 3%;
+            font-size: 4em;
+            margin-left: 5%;
+        }
+        .page3 p {
+            font-size: 1.4em;
+            margin-top: 1%;
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+        .page3 h2 {
+            margin-top: 3%;
+            margin-left: 5%;
+            font-size: 2em;
+        }
+        .page3 .Graphic {
+            margin-left: 6.8%;
+            font-size: 20px;
+            margin-right: 56%;
+        }
+        .page3 .Graphic li {
+            padding: 1.2%;
+        }
+        .page3 #Grap {
+            margin-right: 6%;
+            height: 310px;
+            width: 580px;
+        }
+        .page3 #Grap:hover {
+            transform: scale(1.2);
+        }
+        .page3 .UIUX {
+            margin-top: 4%;
+            margin-left: 54%;
+            font-size: 20px;
+            margin-right: 6%;
+        }
+        .page3 .UIUX li {
+            padding: 1.2%;
+        }
+        .page3 #UIUX{
+            margin-top: 1%;
+            margin-left: 6%;
+            height: 300px;
+            width: 550px;
+        }
+        .page3 #UIUX:hover {
+            transform: scale(1.1);
+        }
+        .page3 .Prototyping {
+            margin-left: 6.8%;
+            font-size: 20px;
+            margin-right: 56%;
+            margin-top: 5%;
+        }
+        .page3 .Prototyping li {
+            padding: 1.2%;
+        }
+        .page3 #Prototyping {
+            margin-right: 6%;
+            height: 250px;
+            width: 480px;
+        }
+        .page3 #Prototyping:hover {
+            transform: scale(1.5);
+        }
+        .page4 h1 {
+            margin-top: 3%;
+            margin-left: 5%;
+            font-size: 4em;
+        }
+        .page4 p {
+            margin-top: 2%;
+            font-size: 1.4em;
+            margin-left: 6%;
+            margin-right: 10%;
+        }
+        .SecurityTools {
+            margin-top: 5%;
+            display: flex;
+            margin-left: 3%;
+        }
+        .SecurityTools img:hover {
+            transform: scale(1.5);
+        }
+        .SecurityTools #kali {
+            margin-top: 7%;
+            margin-left: 15%;
+        }
+        .SecurityTools #kali1 {
+            margin-top: 7%;
+            margin-left: 5%;
+        }
+        .SecurityTools #Meta {
+            margin-left: 10%;
+        }
+        .page4 #wire {
+            margin-top: 3%;
+            margin-left: 14%;
+        }
+        .page4 #nikto {
+            margin-top: 3%;
+            margin-right: 12%;
+        }
+        .page4 #wire:hover {
+            transform: scale(1.5);
+        }
+        .page4 #nikto:hover {
+            transform: scale(1.5);
+        }
+        .page4 #wire1 {
+            position: absolute;
+            margin-top: 14%;
+            margin-left: 7%;
+            margin-right: 50%;
+        }
+        .page4 #nikto1 {
+            position: absolute;
+            margin-top: 14%;
+            margin-left: 60%;
+            margin-right: 5%;
+        }
+        .page4 #video {
+            margin-top: 27%;
+            margin-left: 8%;
+        }
+
+
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="news.html">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="communityhome.html">Tech Community</a></li>
+                        <li><a href="Tech Tools.html">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+
+                <a href="SubscriptionPlans.html" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>           
+
+
+    <div class="page">
+        <h1>Tech Tools</h1>
+    </div>
+    <div class="page1">
+        <h1>Developer Tools:</h1>
+        <h3 id="h1">Developer Tools</h3>
+        <p id="p1">(or "development tools" or short "DevTools") are programs that allow a developer to create, test and debug software.</p>
+        <p id="p2">Current browsers provide integrated developer tools, which allow to inspect a website. They let users inspect and debug the page's <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a>, and <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">JavaScript</a>, allow to inspect the network traffic it causes, make it possible to measure its performance, and much more.</p>
+        <h1>Learning and Education</h1>
+        <img  src="images/img32.jpg" alt=""  style="float:right">
+        <ul class="Education">
+        <h2>Online Courses and Tutorials</h2>
+        <li><a href="https://www.udemy.com/">Udemy:</a> Courses on various programming languages and technologies</li>
+        <li><a href="https://www.coursera.org/">Coursera:</a> University-style courses on computer science and software development.</li>
+        <li><a href="https://www.edx.org/">edX:</a> Offers online courses from institutions like MIT and Harvard.</li>
+        </ul>
+        <ul class="Education">
+            <h2>Documentation and Reference</h2>
+            <li><a href="https://www.w3schools.com/">W3Schools:</a> Tutorials and references on web development languages</li>
+            <li><a href="https://javascript.info/">JavaScript.info:</a> In-depth guide and tutorials on JavaScript.</li>
+            <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs:</a> Comprehensive resource for web development, including HTML, CSS, and JavaScript</li>
+        </ul>
+
+        <h1>Code Editors and IDEs</h1>
+        <img id="code" src="images/img33.jpg" alt=""  style="float:left">
+        <ul class="code">
+            <li><a href="https://code.visualstudio.com/">Visual Studio Code:</a> Highly customizable, supports many languages and extensions.</li>
+            <li><a href="https://www.sublimetext.com/">Sublime Text:</a> Lightweight and fast code editor.</li>
+            <li><a href="https://github.blog/news-insights/product-news/sunsetting-atom/">Atom:</a> Open-source code editor with a focus on modularity.</li>
+            <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA:</a> Powerful IDE, particularly strong for Java, Kotlin, and other JVM languages.</li>
+        </ul>
+        <h1 id="h2"> Version Control Systems</h1>
+        <img id="Systems" src="images/img34.png" alt=""  style="float:right">
+        <ul class="Systems">
+            <li><a href="https://git-scm.com/">Git:</a> Distributed version control system, essential for modern development.</li>
+            <li><a href="https://github.com/">GitHub:</a> Hosting service for Git repositories with collaboration features.</li>
+            <li><a href="https://about.gitlab.com/">GitLab:</a> Integrated CI/CD platform with Git repository management.</li>
+            <li><a href="https://bitbucket.org/">Bitbucket:</a> Git repository hosting with built-in CI/CD.</li>
+        </ul>
+        <h1 id="h3">Testing Tools</h1>
+        <h1 id="h4">Database Management Tools</h1>
+        <img id="img3" src="images/img35.webp" alt=""  style="float:left">
+        <img id="img4" src="images/img36.webp" alt=""  style="float:right">
+        <ul class="Tools">
+            <li><a href="https://jestjs.io/">Jest:</a> JavaScript testing framework with a focus on simplicity.</li>
+            <li><a href="https://mochajs.org/">Mocha:</a> Flexible testing framework for JavaScript.</li>
+            <li><a href="https://junit.org/junit5/">JUnit:</a> Popular testing framework for Java.</li>
+            <li><a href="https://www.selenium.dev/">Selenium:</a> Tool for automating web browsers for testing purposes.</li>
+        </ul>
+        <ul class="Design">
+            <li><a href="https://www.pgadmin.org/">pgAdmin: </a> Management tool for PostgreSQL databases.</li>
+            <li><a href="https://www.mongodb.com/products/tools/compass">MongoDB Compass:</a> GUI for managing MongoDB databases.</li>
+            <li><a href="https://www.mysql.com/products/workbench/">MySQL Workbench:</a> Visual tool for MySQL database design, development, and administration.</li>
+        </ul>
+    </div>
+    <div class="page2">
+        <h1>Productivity Tools</h1>
+        <p>Productivity tools are applications designed to help individuals and organizations improve their work efficiency and effectiveness. They streamline workflows, enhance collaboration, and optimize time management to empower individuals and teams to achieve their goals with less effort and in less time.</p>
+        <div class="vido">
+            <iframe width="990" height="515" src="https://www.youtube.com/embed/9nlDBij343o?si=AL9SqGpTIjWpW-tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p id="p3">The right tech tool can make all the difference when it comes to productivity, and nobody knows that better than tech industry leaders. We’ve all heard the phrase, “There’s an app for that,” but it’s still surprising how many daily tasks and needs can be addressed with technology (often for free or at minimal cost).</p>
+    </div>
+    <div class="page3">
+        <h1>Design Tools</h1>
+        <p>Design tools are essential for creating everything from graphics and websites to presentations and prototypes. Whether you're a graphic designer, web developer, or just looking to create visually appealing content, here's a comprehensive list of design tools that cater to different needs and skill levels</p>
+        <h2>Graphic Design</h2>
+        <img id="Grap" src="images/img37.jpg" alt=""  style="float:right">
+        <ul class="Graphic">
+            <li>Adobe Photoshop Industry-standard tool for photo editing, digital painting, and graphic design.</li>
+            <li>Adobe Illustrator Vector graphic editor for creating logos, illustrations, and complex designs.</li>
+            <li>CorelDRAW A vector graphic design tool known for its robust features and user-friendly interface.</li>
+            <li>Affinity Designer A professional graphic design tool that's a popular alternative to Adobe Illustrator.</li>
+            <li>GIMP (GNU Image Manipulation Program) A free, open-source alternative to Photoshop with a wide range of features.</li>
+        </ul>
+        <h2>UI/UX Design</h2>
+        <img id="UIUX" src="images/img38.webp" alt=""  style="float:left">
+        <ul class="UIUX">
+            <li>Figma A web-based design tool for UI/UX design with real-time collaboration features.</li>
+            <li>Adobe XD A tool for designing and prototyping user experiences for web and mobile apps.</li>
+            <li>Sketch A vector-based design tool popular for UI/UX design, especially in macOS environments.</li>
+            <li>InVision Provides prototyping, collaboration, and workflow tools for design projects.</li>
+        </ul>
+        <h2>Prototyping</h2>
+        <img id="Prototyping" src="images/img39.png" alt=""  style="float:right">
+        <ul class="Prototyping">
+            <li>Balsamiq A tool focused on low-fidelity wireframing to help brainstorm and layout concepts quickly.</li>
+            <li>Axure RP Advanced prototyping tool with interactive elements and dynamic content capabilities.</li>
+            <li>Marvel App Allows for wireframing, prototyping, and user testing with an easy-to-use interface.</li>
+        </ul>
+    </div>
+    <div class="page4">
+        <h1>Security Tools</h1>
+        <p>Security tools are essential for protecting your digital assets, data, and systems from threats such as malware, unauthorized access, and cyberattacks. Here's an overview of key security tools and their features to help safeguard your environment.</p>
+    <div class="SecurityTools">
+        <div class="to1">
+            <img id="kali" src="images/img40.png" alt="">
+            <p id="kali1" class="pr1">Kali Linux is a Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security. The software is based on the Debian Testing branch: most packages Kali uses are imported from the Debian repositories. <a href="https://en.wikipedia.org/wiki/Kali_Linux">wikipedia</a></p>
+        </div>
+        <div  class="to2">
+            <img id="Meta" src="images/img41.png" alt="">
+            <p class="pr2">The Metasploit Project is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. It is owned by Boston, Massachusetts-based security company, Rapid7. <a href="https://en.wikipedia.org/wiki/Metasploit">wikipedia</a></p>
+        </div>
+        <div class="to3">
+            <img src="images/img42.png" alt="">
+            <p class="pr3">John the Ripper is a free password cracking software tool. Originally developed for the Unix operating system, it can run on fifteen different platforms. <a href="https://en.wikipedia.org/wiki/John_the_Ripper">wikipedia</a></p>
+        </div>
+    </div>
+    <img id="wire" src="images/img43.jpeg" alt="" height="130px" width="180px" style="float:left">
+    <img id="nikto" src="images/img44.png" alt="" style="float:right">
+    <p id="wire1">Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues. <a href="https://en.wikipedia.org/wiki/Wireshark">wikipedia</a></p>
+    <p id="nikto1">Nikto is a free software command-line vulnerability scanner that scans web servers for dangerous files/CGIs, outdated server software and other problems. It performs generic and server type specific checks. It also captures and prints any cookies received. <a href="https://en.wikipedia.org/wiki/Nikto_(vulnerability_scanner)">wikipedia</a></p>
+    <div id="video">
+        <iframe width="1100" height="555" src="https://www.youtube.com/embed/SW6AE76Pi50?si=n1YufYt6IRk2GrX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about" style="text-align: left;">
+                <h3>About TechInnovate</h3>
+                <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a ref="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+                <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+                <a ref="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product showcase.html">Products</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="innovationhub.html">Innovation</a></li>
+                    <li><a href="Privacy and Security.html">Privacy Policy</a></li>
+    
+    
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Tech Topics</h3>
+                <ul>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="technews.html">Articles</a></li>
+                    <li><a href="communityhome.html">Community</a></li>
+                    <li><a href="Tech Tools.html">Tech tools</a></li>
+    
+                </ul>
+            </div>
+            <div class="footer-section contact" style="text-align: left;">
+                <h3>Contact Us</h3>
+                <p>Email: contact@techinnovate.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function signUp() {
+    alert("Welcom to Tech Innovate! Stay tuned for updates.");
+    }
+    
+    </script>
+
+</body>
+</html>

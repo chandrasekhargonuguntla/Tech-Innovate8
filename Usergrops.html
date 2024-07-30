@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Interest Groups</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:'Poppins','sansserif'
+}
+
+.body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}            
+#btn {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+.main{
+    background-image: url(images/img24.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    color:white;
+    text-align: center;
+}
+.main h1{
+    padding-top:30px;
+}
+.heading{
+    background: linear-gradient(90deg, rgb(110, 4, 248), #2ec1fc,rgb(248, 4, 187)); -webkit-background-clip: text;
+     color: transparent;
+    display: inline-block;
+    margin-left:500px;
+    font-size: 55px;
+    text-align: center;
+}
+.game-container1{
+    display:flex;
+    gap:120px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.game-container1 .game{
+    padding:20px;
+    width:250px;
+    height:170px;
+    box-shadow: 0px 2px 8px 2px grey;
+    border-radius: 20px;
+}
+.game-container1 .game:hover{
+    border-radius:60px 0px 60px 0px;
+}
+.game-container1 .game p{
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game-container1 .game #para{
+    font-size: 18px;
+    color:rgb(109, 173, 12);
+}
+.game-container1 button {
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #16f729;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.game-container1 button:hover {
+    background-color: #02080f;
+}
+
+.game-container2{
+    display:flex;
+    gap:120px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.game-container2 .game{
+    padding:20px;
+    width:250px;
+    height:170px;
+    box-shadow: 0px 2px 8px 2px grey;
+    border-radius: 20px;
+}
+.game-container2 .game:hover{
+    border-radius:60px 0px 60px 0px;
+}
+.game-container2 .game p{
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game-container2 .game #para{
+    font-size: 18px;
+    color:rgb(109, 173, 12);
+}
+.game-container2 button {
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 0.5em 1em;
+    border: none;
+    background: #16f729;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.game-container2 button:hover {
+    background-color: #01060c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+.icon a:hover{
+    
+}
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top:20px;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/techlogo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#news">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="#community">Tech Community</a></li>
+                        <li><a href="#tools">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+
+                <a href="#" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h1>Yes, it's ok to send me email</h1>
+        <h3>You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at hello@futuretodayinstitute.com</h3>
+    </div>
+
+    <h1 class="heading">User Groups</h1>
+
+    <div class="game-container1">
+        <div class="game">
+             <p>Tech Trends</p>
+             <button id="btn1">Join group</button>
+             <p id="para"></p>
+        </div>
+
+        <div class="game">
+            <p>Scenario Planning</p>
+            <button id="btn1">Join group</button>
+            <p id="para"></p>
+       </div>
+
+       <div class="game">
+            <p>Strategy</p>
+            <button id="btn1">Join group</button>
+            <p id="para"></p>
+       </div>
+    </div>
+    
+
+    <div class="game-container2">
+        <div class="game">
+             <p>Artificial Intelligence</p>
+             <button id="btn1">Join group</button>
+             <p id="para"></p>
+        </div>
+
+        <div class="game">
+            <p>Bioengineering</p>
+            <button id="btn1">Join group</button>
+            <p id="para"></p>
+        </div>
+
+       <div class="game">
+            <p>Blockchain</p>
+            <button id="btn1">Join group</button>
+            <p id="para"></p>
+       </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about" style="text-align: left;">
+                <h3>About TechInnovate</h3>
+                <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+                <div class="icons">
+                    <p>Follow us on...</p><br>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#learning">Learning</a></li>
+                    <li><a href="#innovation">Innovation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Tech Topics</h3>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Tech tools</a></li>
+                    <li><a href="#">Privacy police</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact" style="text-align: left;">
+                <h3>Contact Us</h3>
+                <p>Email: contact@techinnovate.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+        </div>
+    </footer>
+
+            
+<script>
+    const games = document.querySelectorAll(".game");
+
+    games.forEach(game => {
+        
+    const btn = game.querySelector("#btn1");
+    const para = game.querySelector("#para");
+    btn.addEventListener("click",function(){
+    para.innerText = "You are added to this group"; 
+    });
+});
+</script>
+    
+</body>
+</html>

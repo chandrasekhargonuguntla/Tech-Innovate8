@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}   
+
+/**product1**/
+    img:hover {
+        transform: scale(1.2);
+    }
+        .product1 h1 {
+            margin-top: 3%;
+            font-size: 3.5em;
+            margin-left: 5%;
+        }
+        .product1 p {
+            font-size: 1.2em;
+            margin-left: 4%;
+            margin-right: 5%;
+        }
+        .product1 #im {
+            height: 10%;
+            width: 25%;
+            margin-left: 6.8%;
+        }
+        .product1   #im1 {
+            position: absolute;
+            height: 45%;
+            width: 26%;
+            padding-top: 2%;
+            margin-left: 67%;
+        }
+        .product1 .produc1 h3 {
+            margin-left: 3%;
+            color: black;
+        }
+        .product1 .produc1 {
+            display: flex;
+            margin-left: 10%;
+            color: gray;
+        }
+        .product1 .produc1 .tablet1 {
+            position: absolute;
+            margin-left: 34%;
+        }
+        .product1 .produc1 .tablet2 {
+            position: absolute;
+            margin-left: 65%;
+        }
+/**product2**/
+        .product2 #im  {
+            margin-top: 5%;
+            height: 280px;
+            margin-left: 8.1%;
+        }
+        .produc2 {
+            display: flex;
+            color: gray;
+        }
+        .produc2 .vivo h3 {
+            margin-right: 30%;
+            margin-left: 7%;
+            color: black;
+        }
+        .produc2  .vivo {
+            position: absolute;
+            margin-left: 10%;           
+        } 
+        .produc2  .Redmi h3 {
+            margin-left: 6%;
+            margin-right: 30%;
+            color: black;
+        }
+        .produc2 .Redmi {
+            position: absolute;
+            margin-left: 44%;  
+        }
+        .produc2 .Samsung h3 {
+            color: black;
+        }
+        .produc2 .Samsung {
+            position: absolute;
+            margin-left: 74%;
+            margin-right: 1%;
+        }
+/**product3**/
+        .product3 #im  {
+            margin-top: 20%;
+            height: 300px;
+            width: 340px;
+            margin-left: 6%;
+        }
+        .produc3 {
+            display: flex;
+            color: gray;
+        }
+        .produc3 .Dell h3 {
+            margin-right: 50%;
+            color: black;
+        }
+        .produc3  .Dell {
+            position: absolute;
+            margin-left: 7%;           
+        } 
+        .produc3  .Lenovo h3 {
+            margin-left: 1%;
+            margin-right: 55%;
+            color: black;
+        }
+        .produc3 .Lenovo {
+            position: absolute;
+            margin-left: 42%;  
+        }
+        .produc3 .HP h3 {
+            color: black;
+        }
+        .produc3 .HP {
+            position: absolute;
+            margin-left: 74%;
+            margin-right: 1%;
+        }
+/**product4**/
+        .product4 #im  {
+            margin-top: 25%;
+            height: 280px;
+            margin-left: 9.5%;
+        }
+        .produc4 {
+            display: flex;
+            color: gray;
+        }
+        .produc4 .EarFun h3 {
+            margin-right: 70%;
+            color: black;
+        }
+        .produc4  .EarFun {
+            position: absolute;
+            margin-left: 7%;           
+        } 
+        .produc4  .Watch h3 {
+            margin-left: 1%;
+            margin-right: 55%;
+            color: black;
+        }
+        .produc4 .Watch {
+            position: absolute;
+            margin-left: 42%;  
+        }
+        .produc4 .airbuds h3 {
+            color: black;
+        }
+        .produc4 .airbuds {
+            position: absolute;
+            margin-left: 74%;
+            margin-right: 1%;
+        }
+        #butt {
+            position: absolute;
+            margin-top: 16%;
+            margin-left: 1140px;
+            background-color:  #55b7ca;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+        }
+        #butt a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #butt:hover{
+            color: white;
+            background-color: gray;
+        }    
+/**FOOTER**/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20%
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="news.html">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="communityhome.html">Tech Community</a></li>
+                        <li><a href="Tech Tools.html">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="innovations.html">Innovation</a></li>
+
+                <a href="SubscriptionPlans.html" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>           
+    <!--produc1-->
+    <div class="product1">    
+        <h1>New Releases</h1>
+        <img id="im1" src="images/img22.webp" alt="">
+        <img id="im" src="images/img2.webp" alt="">
+        <img id="im" src="images/img21.jpg" alt="">
+    
+        <div class="produc1">
+            <div class="tablet">
+                <h3>Galaxy Tab S9 FE <br> <i class="fa-solid fa-indian-rupee-sign"> 38,999.00</i></h3>
+                <ul>
+                    <li>Dimensions : 248.6 x 179.5 x 7mm</li>
+                    <li>OS : iPadOS 17</li>
+                    <li>Storage : 64GB / 256GB</li>
+                    <li>microSD slot : No</li>
+                    <li>Rear camera: 12MP</li>
+                    <li>Battery : Up to 10 hours</li>
+                </ul>
+            </div>
+            <div class="tablet1">
+                <h3>OnePlus Pad Go 28.85cm (11.35 inch) <i class="fa-solid fa-indian-rupee-sign"> 36,999.00</i></h3>
+                <ul>
+                    <li>Dimensions : 248.6 x 179.5 x 7mm</li>
+                    <li>OS : iPadOS 17</li>
+                    <li>Storage : 124GB / 256GB</li>
+                    <li>microSD slot : No</li>
+                    <li>Rear camera: 16MP</li>
+                    <li>Battery : Up to 15 hours</li>
+                </ul>
+            </div>
+            <div class="tablet2">
+                <h3>Xiaomi Pad 6| Qualcomm <i class="fa-solid fa-indian-rupee-sign"> 30,999.00</i></h3>
+                <ul>
+                    <li>Dimensions : 248.6 x 179.5 x 7mm</li>
+                    <li>OS : HyperOS</li>
+                    <li>Storage : 64GB / 128GB</li>
+                    <li>microSD slot : No</li>
+                    <li>Rear camera: 16MP</li>
+                    <li>Battery : Up to 15 hours</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    <!--produc2-->
+        <div class="product2">
+        <img id="im" src="images/img3.webp" alt="">
+        <img id="im" src="images/img23.jpg" alt="">
+        <img id="im" src="images/img24.jpg" alt="">
+        </div>
+        <div class="produc2">
+            <div class="vivo">
+                <h3>V29 12GB+256GB Majestic Red <i class="fa-solid fa-indian-rupee-sign"> 36,999.00</i></h3>
+                <ul>
+                    <li>Ultra Slim 3D Curved Display</li>
+                    <li>50MP Eye AF Group Selfie Camera</li>
+                    <li>80W FlashCharge</li>
+                    <li>Night Portrait with Smart Aura Light</li>
+                    <li>Wedding Style Portrait</li>
+                    <li>50MP OIS Night Camera</li>
+                </ul>
+            </div>
+            <div class="Redmi">
+                <h3>Redmi Note 13 5G <i class="fa-solid fa-indian-rupee-sign"> 26,999.00</i></h3>
+                <ul>
+                    <li>Ultra Slim 3D Curved Display</li>
+                    <li>50MP Eye AF Group Selfie Camera</li>
+                    <li>80W FlashCharge</li>
+                    <li>120Hz Bezel-less AMOLED</li>
+                    <li>CPU Model	Snapdragon</li>
+                    <li>180MP OIS Night Camera</li>
+                </ul>
+            </div>
+            <div class="Samsung">
+                <h3>Samsung Galaxy S24 Ultra 5G AI Smartphone <i class="fa-solid fa-indian-rupee-sign"> 1,59,999.00</i></h3>
+                <ul>
+                    <li>Operating System	Android 14</li>
+                    <li>120MP Eye AF Group Selfie Camera</li>
+                    <li>120W FlashCharge</li>
+                    <li>Memory Storage Capacity	1024 GB</li>
+                    <li>CPU Model	Snapdragon</li>
+                    <li>280MP OIS Night Camera</li>
+                </ul>
+            </div>
+        </div>
+        <!--produc3-->
+        <div class="product3">
+            <img id="im" src="images/img27.webp" alt="">
+            <img id="im" src="images/img25.jpg" alt="">
+            <img id="im" src="images/img26.jpg" alt="">
+        </div>
+        <div class="produc3">
+            <div class="Dell">
+                <h3>Dell [Smartchoice] 15 Thin & Light Laptop, 12th Gen <i class="fa-solid fa-indian-rupee-sign"> 35,999.00</i></h3>
+                <ul>
+                    <li>Model Name	Vostro</li>
+                    <li>Screen Size	14 Inches</li>
+                    <li>Hard Disk Size	512 GB</li>
+                    <li>CPU Model	Core i3 Family</li>
+                    <li>Graphics Card Description	Integrated</li>
+                    <li>Operating System	Windows 11 Home</li>
+                </ul>
+            </div>
+                <div class="Lenovo">
+                    <h3>Lenovo IdeaPad Slim 1 AMD Ryzen 5 5500U 15.6" HD Thin and Light Laptop  <i class="fa-solid fa-indian-rupee-sign"> 38,999.00</i></h3>
+                    <ul>
+                        <li>Model Name	IdeaPad</li>
+                        <li>Hard Disk Size	512 GB</li>
+                        <li>Screen Size	15.6 Inches</li>
+                        <li>Hard Disk Size	512 GB</li>
+                        <li>CPU Model	Ryzen 5</li>
+                        <li>Operating System	Windows 11 Home</li>
+                    </ul>
+                </div>
+                <div class="HP">
+                    <h3>HP Laptop 15s, AMD Ryzen 3 <i class="fa-solid fa-indian-rupee-sign"> 1,36,999.00</i></h3>
+                    <ul>
+                        <li>Model Name	HP Laptop</li>
+                        <li>Screen Size	15.6 Inches</li>
+                        <li>Hard Disk Size	512 GB</li>
+                        <li>CPU Model	Ryzen 3</li>
+                        <li>Colour	Natural Silver</li>
+                        <li>Operating System	Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+            <!--produc4-->
+            <div class="product4">
+                <img id="im" src="images/img5.jpg" alt="">
+                <img id="im" src="images/img6.jpg" alt="">
+                <img id="im" src="images/img4.webp" alt="">
+                </div>
+                <div class="produc4">
+                    <div class="EarFun">
+                        <h3>EarFun Wave Pro Active Noise Canceling Headphones, Wireless Over Ear Bluetooth Headphones, LDAC Hi-Res Sound, 5 Mics AI Clear Call, 80H Playtime, Multipoint Connection, Comfort Fit, Custom EQ via App <i class="fa-solid fa-indian-rupee-sign"> 3,999.00</i></h3>
+                        <ul>
+                            <li>Brand : EarFun</li>
+                            <li>Colour : Black</li>
+                            <li>Ear Placement : Over Ear</li>
+                            <li>Form Factor : Over Ear</li>
+                            <li>Noise Control : Active Noise Cancellation</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="Watch">
+                        <h3>mi Smart Watch for Men & Women, Bluetooth Smartwatch Touch Screen Bluetooth Smart Watches for Android iOS Phones Wrist Phone Watch, Women - Royal Black ID116 Smart Watch - Black <br><i class="fa-solid fa-indian-rupee-sign"> 1,999.00</i></h3>
+                        <ul>
+                            <li>Operating System : Android,Ios</li>
+                            <li>Special Feature	: Notifications</li>
+                            <li>Connectivity Technology	: Bluetooth</li>
+                            <li>Shape : Square</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="airbuds">
+                        <h3>AirPods Pro (2nd generation) <i class="fa-solid fa-indian-rupee-sign"> 26,999.00</i></h3>
+                        <ul>
+                            <li>Brand : Apple</li>
+                            <li>Colour : White</li>
+                            <li>Form Factor : In Ear</li>
+                            <li>Noise Control : Active Noise Cancellation</li>
+                            <li>Headphones Jack : lightning</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <button id="butt"><a href="SubscriptionPlans.html">Subscribe</a></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about" style="text-align: left;">
+                <h3>About TechInnovate</h3>
+                <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a ref="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+                <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+                <a ref="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product showcase.html">Products</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="innovations.html">Innovation</a></li>
+                    <li><a href="Privacy and Security.html">Privacy Policy</a></li>
+    
+    
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Tech Topics</h3>
+                <ul>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="technews.html">Articles</a></li>
+                    <li><a href="communityhome.html">Community</a></li>
+                    <li><a href="Tech Tools.html">Tech tools</a></li>
+    
+                </ul>
+            </div>
+            <div class="footer-section contact" style="text-align: left;">
+                <h3>Contact Us</h3>
+                <p>Email: contact@techinnovate.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function signUp() {
+    alert("Welcom to Tech Innovate! Stay tuned for updates.");
+    }
+    
+    </script>
+</body>
+</html>

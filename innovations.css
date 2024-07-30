@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 203, 203);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 20px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}
+.products1, .solutions1{
+    height: 200px;
+    width: 100%;
+    align-content: center;
+    margin-top: 50px;
+}
+.products1A ,.solutions1A{
+    height: 400px;
+    width: 90%;
+    margin-left: 60px;
+    border: 0.5px solid rgb(23, 24, 23);
+    border-radius: 10px;
+    margin-top: 20px;
+    background:linear-gradient(white,rgb(158, 157, 157));
+    transition: transform 0.3s ease-out;
+}
+.products1A:hover ,.solutions1A:hover{
+transform: scale(1.04);
+}
+.products1 h1, .solutions1 h1{
+    padding: 10px;
+    color: rgb(48, 15, 15);
+
+}
+.products1 p, .solutions1 p{
+    padding: 10px;
+    color: rgb(70, 69, 69);
+    font-size: 22px;
+}
+.products1A h1, .solutions1A h1{
+    color: rgb(61, 150, 61);
+    text-align: center;
+    padding: 10px;
+}
+.products1A img, .solutions1A img{
+    height: 200px;
+    width: 350px;
+    margin-left: 400px;
+    border-radius: 10px;
+}
+.products1A p,.solutions1A p{
+    font-size: 21px;
+    padding: 10px;
+    color: rgb(10, 29, 4);
+}
+
+.bnt a{
+    text-decoration: none;
+    background-color: rgb(60, 175, 228);
+    padding: 10px 25px;
+    margin-left: 600px;
+    color:white;
+    border-radius: 10px;
+}
+.bnt a:hover{
+    background-color: gray;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover{
+    text-decoration: underline;
+    color: rgb(173, 171, 171);
+}
+
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}

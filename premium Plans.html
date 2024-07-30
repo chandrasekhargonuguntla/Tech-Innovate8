@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>TechInnovate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins','sansserif'
+}
+
+.body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}            
+#btn {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+.main1{
+            background: url(images/img16.webp);
+            height:400px;
+            width:100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+           padding-left:70px;
+           padding-top:100px;
+            color:white;
+            padding:50px;
+            
+    top: 0;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        
+        .main1 button{
+            margin-top:70px;
+            width:250px;
+            height:50px;
+            background-color:blue;
+            color: white;
+            border-radius:30px;
+            border: none;
+            font-size:20px;
+        }
+        .main1 button:hover{
+            background:white;
+            color: black;
+            transform:scale(1.2);
+        
+
+        }
+
+         .main2{
+        margin-left: 100px;
+    background-image: url(images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 305px;
+    width: 80%;
+    color: rgb(230, 223, 223);
+    column-gap: 50px;
+    border-radius: 20px;
+    margin-top:100px;
+    padding:35px;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+   
+    
+         }
+        
+    .main2 h2{
+        transform: translateX(-50%);
+    animation: slideIn 2s forwards;
+    }
+        @keyframes slideIn{
+        to{
+        transform:translateX(0);
+          }
+    }
+    .main2 h3{
+        transform: translateX(-50%);
+    animation: slideIn 2s forwards;
+    }
+        @keyframes slideIn{
+        to{
+        transform:translateX(0);
+          }
+    }
+    .main3 img{
+       height:200px;
+       width:200px;
+       margin-top:50px;
+       border-radius:50%;
+
+    }
+    
+
+.bios1:hover, .bios2:hover, .bios3:hover {
+    transform: scale(1.05);
+}
+
+
+.icon{
+        display: flex;
+        margin-left:20px;
+        margin-top:50px;
+        border:3px solid rgb(7, 7, 241);
+        border-radius:30px;
+        width:700px;
+       
+     }
+
+       .afour{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-around;
+    padding: 10px;
+   
+}
+.afour1 h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.accordion{            
+    width: 10%;
+    width: 400px;
+    padding-top: 40px;
+    margin-left:10px;
+   
+    
+}
+.accordion1{            
+    width: 10%;
+    width: 400px;
+    padding-top: 40px;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+.accordion-item{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:blue;
+    height:30px;
+    cursor: pointer;
+    transition: background-color 3s;
+}
+
+
+.accordion-symbol{
+    font-size: 35px;
+    color: rgb(249, 250, 250);
+    transition: transform 0.2s;
+}
+
+.accordion-content{
+    display: none;
+    padding: 15px;
+    background-color:blue;
+    border-top: 1px solid,blue;
+    height:50px;
+}
+
+.accordion-content p{
+    margin: 0;
+    color:white;
+}
+.accordion-header h3{
+    color: aliceblue;
+}
+.accordion-header.active .accordion-symbol{
+    transform: rotate(180deg);
+}
+.acco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+}
+.spook{
+    margin-top:55px;
+    margin-left:40px;
+}
+.spook h1{
+    background: linear-gradient(90deg, rgb(252, 68, 191), #2ec1fc,rgb(248, 150, 57)); -webkit-background-clip: text;
+     color: transparent;
+    display: inline-block;
+    margin-left:20px;
+}
+
+.main5{
+            display: flex;
+            justify-content: space-around;
+            margin-top:50px;
+            position: relative;
+           
+        }
+
+.main6{
+            background-color: rgb(247, 215, 129);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;  
+            
+        }
+        .main6:hover{
+            transform: scale(1.1);
+        }
+        .main6 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main6 h2{
+            text-align: center;
+        }
+        .main6 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main6 button{
+            background:rgb(247, 161, 3) ;
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+          position: absolute;
+          margin-top:-18px;
+           
+           
+        }
+        .main6 button:hover{
+            background: white;
+        }
+        .main7{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main7 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main7 h3{
+            text-align: center;
+            margin-top:2px;
+        }
+        .main71{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+        }
+        .main71 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main71 h3{
+            text-align: center;
+            margin-top:2px;
+        }
+
+
+        .main8{
+            background-color:rgb(187, 125, 245);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;
+
+            
+        }
+
+        .main8:hover{
+            transform: scale(1.1);
+        }
+        .main8 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main8 h2{
+            text-align: center;
+        }
+        .main8 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main8 button{
+            background:rgb(133, 9, 248);
+            
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+            position: absolute;
+          margin-top:-18px;
+           
+        }
+
+        .main8 button:hover{
+            background: white;
+        }
+        .main9{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main9 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main9 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+        .main91{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+        }
+        .main91 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main91 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+
+        .main10{
+            background-color:rgb(128, 253, 149);
+            height:300px;
+            width:400px;
+            border-radius:30px 30px 0px 0px;
+           
+        }
+        .main10:hover{
+            transform: scale(1.1);
+        }
+        .main10 h1{
+            text-align: center;
+           padding-top:30px;
+        }
+        .main10 h2{
+            text-align: center;
+        }
+        .main10 p{
+            text-align: center;
+            font-size:20px;
+            font-weight:700;
+        }
+        .main10 button{
+            background:rgb(3, 255, 100) ;
+            height:35px;
+            width:200px;
+            border-radius:30px;
+            border: none;
+            margin-left:100px;
+            font-size:20px;
+            position: absolute;
+            margin-top:-18px;
+            text-align: center;
+           
+        }
+        .main10 button:hover{
+            background: white;
+        }
+        .main11{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+           
+            
+        }
+        .main11 i{
+           font-size:20px;
+           background: rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main11 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+
+        .main112{
+            background-color: rgb(235, 242, 248);
+            display: flex;
+            height: 60px;
+            padding-top:20px;
+            padding-left:20px;
+            border-radius:0px 0px 40px 40px;
+            
+            
+        }
+        .main112 i{
+           font-size:20px;
+           background:rgb(92, 245, 92);
+           height:30px;
+           width:30px;
+            text-align: center; 
+            padding-top:4px;
+            border-radius:50%;
+        }      
+        .main112 h3{
+            margin-left:10px;
+            margin-top:2px;
+        }
+
+
+    .images{
+        margin-top:30px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .images .img1 img{
+        border-radius:20px;
+    }
+    .images .img1 img:hover{
+        border-radius:120px 0px 120px 0px;
+    }
+    .images h1{
+        text-align: center;
+    }
+    .images p{
+        text-align: center;
+    }
+    .cont{
+        margin-top:250px;
+        text-align: center;
+    }
+
+    .btn button{
+    background:blue;
+    color: white;
+    margin-left:600px;
+    height:50px;
+    width:200px;
+    font-size:20px;
+    border-radius:12px;
+    margin-bottom:50px;
+    border: none;
+}
+
+.btn button:hover{
+    background:white;
+    color:black;
+    border:1px solid black;
+}
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top:30px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+.icon a:hover{
+    
+}
+
+
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top:20px;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/techlogo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="home.html">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="communityhome.html">Tech Community</a></li>
+                        <li><a href="Tech Tools.html">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+
+                <a href="SubscriptionPlans.html" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>
+
+        <div class="main1">
+            <h1>One-time recharge for 1 full year</h1><br>
+            <h3>Enjoy special privileges with Tech Plus.</h3>
+           <a  href="SubscriptionPlans.html"> <button>All Free Plans</button></a>
+           <a  href="#sss"><button>premium Plans</button></a>
+        </div>
+ <div class="main2">
+           <h2>
+            Unlimited calls & SMS, International Roaming, and more with tech Postpaid</h2><br>
+<h3>>>>The tech Postpaid plan is the one-stop solution for all your digital needs. Enjoy connected living with unlimited calls
+    & SMS and high-speed internet through India’s only True 5G network. That's not all. You get a FREE subscription
+     to the top OTT channels like Netflix, Amazon Prime, etc., and binge-watch all the trending content
+      for FREE. Also, access our bouquet of premium Jio apps like JioCinema, JioTV, JioGames,
+       JioNews, and more.What's more, you can also share this digital bliss with your
+        loved ones by adding multiple connections under one pack through family 
+        plans. Wait no more! Step into the world of Jio’s postpaid experiences today.
+         Order your new postpaid SIM online and get it home-delivered for FREE.
+
+           </h3>
+ </div> 
+ 
+<div class="icons">
+ <div class="icon">
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3>International roaming packs</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+            <p>Enjoy international Wi-Fi calling, in-flight connectivity, lowest PayGo rates and more on your foreign trips.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3>Tech Tunes</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+                <p>Greet your callers with your favourite song! Just find a JioTune, listen to the preview, and set it as your hello tune.</p>
+                </p>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3>Exclusive plans for JioPhone </h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+            <p>All-in-one plans with high-speed internet, unlimited calls and SMS, FREE OTT subscriptions and more. </p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+               <h3>Tech Autopay</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+            <p>No tracking due date or recharge date, no entering details every month, and yet, clear your dues on</p>
+            </div>
+        </div>
+        </div>
+
+     <div class="accordion1">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3>FREE calls and SMS </h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+        </div>
+            <div class="accordion-content">
+           <p>Stay connected 24*7 with high-speed internet, FREE calls and SMS, unlimited data, and superfast connectivity. </p>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3> Software Development</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+                <p>Connect with fellow developers to discuss programming languages, frameworks, and best practices.  </p>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3> How can  buy the  tech Phone​</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+                <p>1.Visit jiophone-next/registration
+                    2.Visit the nearest JioMart Digital Retailer.
+                    3.On WhatsApp – Send “Hi” to 7018270182</p>
+                </p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h3>AI and Machine Learning</h3>
+                <span class="accordion-symbol"><span class="material-symbols-outlined">add </span>
+                </span>
+            </div>
+            <div class="accordion-content">
+                <p>The ₹319 is a one-of-a-kind, ‘calendar-month validity’ plan from Jio. It means that irrespective of the number of days in a month, </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="spook">
+                <img src="images/img17.png" height="300px" width="530px">
+                <h1>>>Upgrade your digital benefits</h1>
+  </div>
+</div> 
+
+<div class="main5" id="sss">
+    <div class="main6">
+            <h1>Go for unlimited entertainment</h1><br>
+            <h2>₹3599</h2>
+            <p>ONLY ₹276/MONTH</p><br>
+          <a href="Signup.html"><button>Sign UP</button></a>
+       <div class="main7">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Pack validity - 365 Days</h3>
+       </div>      
+       </div>
+       <div class="main7">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Total data - 912.5 GB</h3>
+       </div>      
+       </div>
+       <div class="main7">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Data at high speed* - 2.5 GB/Day</h3>
+       </div>      
+       </div>
+       <div class="main7">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>Voice calls - Unlimited</h3>
+       </div>      
+       </div>
+       <div class="main71">
+           <i class="fa-solid fa-check"></i>
+       <div class="sub">
+               <h3>SMS - 100 SMS/Day</h3>
+       </div>      
+       </div>
+    </div>       
+       <div class="main8">
+            <h1>84 Days  Mobile Edtion subscription</h1><br>
+            <h2>₹1029</h2>
+            <p>84 DAYS PRIME VIDEO</p><br>
+           <a href="Signup.html"><button>Sign UP</button></a>
+           <div class="main9">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Pack validity - 84 days</h3>
+           </div>      
+           </div>
+           <div class="main9">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Total data - 168 GB </h3>
+           </div>      
+           </div>
+           <div class="main9">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Data at high speed* - 2 GB/day</h3>
+           </div>      
+           </div>
+           <div class="main9">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Voice - Unlimited</h3>
+           </div>      
+           </div>
+           <div class="main91">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>SMS - 100 SMS/day</h3>
+           </div>      
+           </div> 
+    </div>
+    <div class="main10">
+            <h1>High-speed, reliable connectivity</h1><br>
+            <h2>₹299</h2>
+            <p>POPULAR PLAN</p><br>
+           <a href="Signup.html"><button>Sign UP</button></a>
+           <div class="main11">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Pack validity - 28 Days</h3>
+           </div>      
+           </div>
+           <div class="main11">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Total data - 42 GB</h3>
+           </div>      
+           </div>
+           <div class="main11">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Data at high speed* - 1.5 GB/Day</h3>
+           </div>      
+           </div>
+           <div class="main11">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>Voice - Unlimited</h3>
+           </div>      
+           </div>
+           <div class="main112">
+               <i class="fa-solid fa-check"></i>
+           <div class="sub">
+                   <h3>SMS - 100 SMS/Day</h3>
+           </div>      
+           </div>
+    </div>
+    </div>
+    <h1 class="cont">Already a Tech Postpaid users?</h1>
+<div class="images">
+    
+       <div class="img1">
+                   <img src="images/img15.jpg" height="300px" width="400px">
+                   <h1>Dr.Siri</h1>
+                   <p>Boost your credit limit whenever you need it</p>
+       </div>
+            <div class="img1">
+                    <img src="images/img21.jpg" height="300px" width="400px">
+                     <h1>Family</h1>
+                     <p> Clear all dues automatically on time.</p>
+            </div>
+                <div class="img1">
+                    <img src="images/img22.png" height="300px" width="400px">
+                     <h1>Dr.Kushi</h1>
+                     <p>No tracking due dates or entering details every month.</p>
+                </div>
+</div>
+<br><br><br><br>
+<iframe style="margin-left:250px;" width="860" height="415" src="https://www.youtube.com/embed/B2Nx-DWeMMM?si=WL6q4OF2_KV5nuvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+<br><br> 
+<div class="btn"> 
+    <a href="SubscriptionPlans.html"> <button> All Free Plans</button></a>
+ </div>
+ 
+ <footer>
+    <div class="footer-content">
+        <div class="footer-section about" style="text-align: left;">
+            <h3>About TechInnovate</h3>
+            <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product showcase.html">Products</a></li>
+                <li><a href="#">Learning</a></li>
+                <li><a href="innovationhub.html">Innovation</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>Tech Topics</h3>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="technews.html">Articles</a></li>
+                <li><a href="communityhome.html">Community</a></li>
+                <li><a href="Tech Tools.html">Tech tools</a></li>
+                <li><a href="Privacy and Security.html">Privacy police</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact" style="text-align: left;">
+            <h3>Contact Us</h3>
+            <p>Email: contact@techinnovate.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+    </div>
+</footer>
+         <script>
+        function toggleAccordion(element) {
+        const accordionHeader = element;
+        const accordionContent = accordionHeader.nextElementSibling;
+    
+        if (accordionContent.style.display === "block") {
+            accordionContent.style.display = "none";
+            accordionHeader.classList.remove("active");
+        } else {
+            const allContents = document.querySelectorAll(".accordion-content");
+            const allHeaders = document.querySelectorAll(".accordion-header");
+    
+            allContents.forEach(content => content.style.display = "none");
+            allHeaders.forEach(header => header.classList.remove("active"));
+    
+            accordionContent.style.display = "block";
+            accordionHeader.classList.add("active");
+        }
+    }
+    </script>
+    
+</body>
+</html>

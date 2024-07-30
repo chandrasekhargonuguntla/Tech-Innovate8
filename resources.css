@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}                                                                                                                                                                                                
+
+
+
+button{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+
+}
+button a{
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+ 
+.home{
+    height: 600px;
+    width: 100%;
+    background-image: url(images/home\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.home img{
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.home h1{
+    color: white;
+    /* padding-top: 200px; */
+    font-size: 60px;
+}
+.home p{
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.home1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border:#55b7ca 3px solid;
+    margin-top: 50px;
+}
+
+
+.home1{
+    height: 600px;
+    width: 100%;
+    background-image: url(images/latest.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.home1 h1{
+    color: white;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.home1 p{
+    color: white;
+    padding-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.home1 button{
+    margin-left: 1100px;
+}
+.home1 img{
+    border-radius: 50%;
+    margin: 20px;
+}
+.home2{
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    background-image: url(images/paper.avif);
+    background-size: cover;
+}
+.home2 h1{
+    padding: 10px; 
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.home2 p{
+    padding: 10px;
+    color: white;
+}
+.home2 img{
+    border-radius: 50%;
+}
+.home2 button{
+    margin-left: 1100px;
+    margin-top: 40px;
+}
+.home3{
+    height: 600px;
+    width: 100%;
+    background-image: url(images/webniser.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.home3 h1{
+    padding: 10px; 
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.home3 p{
+    padding: 10px;
+    color: white;
+}
+.home3 img{
+    border-radius: 50%;
+    margin-top: 50px;
+    margin: 20px;
+}
+.home3 button{
+    margin-left: 1100px;
+    margin-top: 40px;
+}
+.home4{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-image: url(images/online\ course.jpeg);
+    background-size: cover;
+}
+.home4 h1{
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    padding-top: 40px;
+}
+.home4 p{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.home4 button{
+    margin-left: 1100px;
+}
+.home4 img{
+    border-radius: 50%;
+    margin: 20px;
+}
+.zoom-img:hover{
+    transform: scale(1.5);
+}
+.slider-img{
+    transform: translateX(-100%);
+    animation: slideIn 3s forwards;
+}
+@keyframes slideIn{
+    to{
+        transform: translateX(0);
+    }
+}

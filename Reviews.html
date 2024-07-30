@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>product showcase</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 218, 218);
+}
+
+header {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+top: 0;
+animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 18px 0;
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(55, 156, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: gray;
+    color: white;
+
+}
+#logout{
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    background-color: rgb(255, 17, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#logout:hover{
+    background-color: rgb(9, 136, 240);
+    color: white;
+
+}   
+
+        .product5 h2 {
+            margin-top: 3%;
+            font-size: 2em;
+            margin-left: 5%;
+        }      
+        .box{
+            width:1130px;
+            padding-left: 20%;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            padding: 50px;
+            margin: 35px;
+            cursor: pointer;
+        }
+        .profile-img{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .profile-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+        .name-user{
+            display: flex;
+            flex-direction: column;
+        }
+        .name-user strong{
+            color: #3d3d3d;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .name-user span{
+            color: #979797;
+            font-size: 0.8rem;
+        }
+        .reviews{
+            color: #f9d71c;
+        }
+        .box-top{
+            
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .client-comment p{
+            font-size: 1.1rem;
+            color: #4b4b4b;
+        }
+        .box:hover{
+            transform: translateY(-10px);
+            transition: all ease 0.3s;
+        }
+        ::selection{
+            color: #ffffff;
+            background-color: #c51818;
+        }
+        #butt {
+            position: absolute;
+            
+            margin-left: 1140px;
+            background-color:  #55b7ca;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+        }
+        #butt a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #butt:hover{
+            color: white;
+            background-color: gray;
+        }    
+/**FOOTER**/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 20px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+
+    
+.footer-section p {
+    margin-top: 20px;
+    
+}
+.icons a{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.jpg" alt="Logo" height="100px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#news">News <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="technews.html">News</a></li>
+                        <li><a href="#community">Tech Community</a></li>
+                        <li><a href="#tools">Tech Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+
+                <a href="#" id="btn">Subscribe</a>
+                <a href="logout.html" id="logout">Log out</a>
+
+            </ul>
+        </nav>
+    </header>           
+
+    <div class="product5">
+        <h2> Top positive reviews</h2>
+        <!--BOX-1-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img9.png" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Prajju poojary</strong>
+                        <span>@Prajju poojary</span>
+                    </div>
+                </div>
+                 <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <img src="images/img20.jpg" height="200px" width="200px" alt="">
+                <p>As of my last update, I don't have specific information on the Vivo T2X 5G. For the most accurate and up-to-date reviews, I recommend checking reputable tech websites such as The Verge, CNET, GSMArena, or TechRadar. These sites typically provide detailed reviews covering aspects like design, display quality, performance, camera capabilities, battery life, and software experience.</p>
+                <p>When reading reviews, it's beneficial to look for multiple opinions to get a well-rounded understanding of the device's strengths and weaknesses. Additionally, user reviews on platforms like Amazon or forums can offer insights into real-world usage experiences. This can help you determine if the Vivo T2X 5G aligns with your preferences and needs in a mobile phone.</p>
+            </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img10.png" />
+                    </div>
+                    <div class="name-user">
+                        <strong>J.K Alex</strong>
+                        <span>@jkAlex</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <img src="images/img16.jpg" height="200px" width="200px" alt="">
+                <p>HP Pavilion Gaming Laptop: The HP Pavilion series often includes gaming laptops that come in various colors, including blue. Reviews typically cover aspects like performance (CPU and GPU performance), display quality (refresh rate, color accuracy), build quality, keyboard and trackpad comfort, cooling system effectiveness, and battery life.</p>
+                <p>HP Omen Gaming Laptop: The HP Omen series is known for higher-end gaming laptops. They often feature powerful CPUs and GPUs, high-refresh-rate displays, customizable RGB lighting, and advanced cooling systems. Reviews will discuss gaming performance in demanding titles, thermal management under load, build quality, and overall value for money.</p>
+                <p>HP Victus Gaming Laptop: The HP Victus line is aimed at budget-conscious gamers. It offers good performance for the price, along with modern design elements and decent gaming capabilities. Reviews will focus on gaming performance, display quality, battery life, and whether it provides a good balance between performance and affordability.</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img11.jpeg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Harry Potter</strong>
+                        <span>@DanielRedclief</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <img src="images/img18.jpg" height="200px" width="200px" alt="">
+            <p>Look for reviews on tech websites like Beebom, Smartprix, and MySmartPrice. These sites often cover budget-friendly tech products and provide insights into performance, build quality, and battery life.</p>
+            <p>Check for reviews on Gadgets 360, 91mobiles, and Digit. These websites often review Indian tech products and provide detailed insights into the pros and cons of each device.</p>
+            </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img12.webp" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Oliva</strong>
+                        <span>@Olivaadward</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="client-comment">
+                <img src="images/img19.jpg" height="200px" width="200px" alt="">
+                <p>A value for money product. I have used it from last 5 months. Overall material quality is best. Also voice is cool. Fantastic thing is it's ANC mode it is very clear so that all other noise is cancelled and we can focus on our listening. So I recommend this buds. It's battery capacity I change it once in 4 to 5 days. It is comfortable for you ears and it don't get any issue when we listen for long time. It's size is also small so it is fit on our pocket. It doesn't occur any type of connectivity issue one it open it connects automatically. So you can get it without any doubt.</p>
+                <p>Been using this product for a week and i must say, the audio quality is remarkable, great lows mids and highs, also the bass is great too. ANC is promising, just make sure you use the earbuds pieces (idk what its called) that matches your ears and you'll notice a significant difference. Transparency mode is great too. This product also supports dolby atmos and 3d spatial sound! Touch controls too, that you can configure via 'Realme link' app.</p>
+            </div>
+        </div>
+    </div>
+        <!--BOX-2-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img10.png" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Akash Singh</strong>
+                        <span>@Akash Singh</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <img src="images/img17.jpg" height="200px" width="200px" alt="">
+                <p>HP Pavilion Gaming Laptop: The HP Pavilion series often includes gaming laptops that come in various colors, including blue. Reviews typically cover aspects like performance (CPU and GPU performance), display quality (refresh rate, color accuracy), build quality, keyboard and trackpad comfort, cooling system effectiveness, and battery life.</p>
+                <p>HP Omen Gaming Laptop: The HP Omen series is known for higher-end gaming laptops. They often feature powerful CPUs and GPUs, high-refresh-rate displays, customizable RGB lighting, and advanced cooling systems. Reviews will discuss gaming performance in demanding titles, thermal management under load, build quality, and overall value for money.</p>
+                <p>HP Victus Gaming Laptop: The HP Victus line is aimed at budget-conscious gamers. It offers good performance for the price, along with modern design elements and decent gaming capabilities. Reviews will focus on gaming performance, display quality, battery life, and whether it provides a good balance between performance and affordability.</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="images/img11.jpeg" />
+                    </div>
+                    <div class="name-user">
+                        <strong>Vatsal Patel</strong>
+                        <span>@Vatsal Patel</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+            <p>Look for reviews on tech websites like Beebom, Smartprix, and MySmartPrice. These sites often cover budget-friendly tech products and provide insights into performance, build quality, and battery life.</p>
+            <p>Check for reviews on Gadgets 360, 91mobiles, and Digit. These websites often review Indian tech products and provide detailed insights into the pros and cons of each device.</p>
+            </div>
+        </div>    
+    </div>
+    <!--BOX-4-------------->
+    <div class="box">
+        <div class="box-top">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="images/img12.webp" />
+                </div>
+                <div class="name-user">
+                    <strong>koti</strong>
+                    <span>@koti3457</span>
+                </div>
+            </div>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="client-comment">
+            
+            <p>A value for money product. I have used it from last 5 months. Overall material quality is best. Also voice is cool. Fantastic thing is it's ANC mode it is very clear so that all other noise is cancelled and we can focus on our listening. So I recommend this buds. It's battery capacity I change it once in 4 to 5 days. It is comfortable for you ears and it don't get any issue when we listen for long time. It's size is also small so it is fit on our pocket. It doesn't occur any type of connectivity issue one it open it connects automatically. So you can get it without any doubt.</p>
+            <p>Been using this product for a week and i must say, the audio quality is remarkable, great lows mids and highs, also the bass is great too. ANC is promising, just make sure you use the earbuds pieces (idk what its called) that matches your ears and you'll notice a significant difference. Transparency mode is great too. This product also supports dolby atmos and 3d spatial sound! Touch controls too, that you can configure via 'Realme link' app.</p>
+        </div>
+    </div>
+</div>
+<!--BOX-4-------------->
+<div class="box">
+    <div class="box-top">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="images/img12.webp" />
+            </div>
+            <div class="name-user">
+                <strong>Naveen</strong>
+                <span>@Naveen2001</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    
+    <div class="client-comment">
+        
+        <p>A value for money product. I have used it from last 5 months. Overall material quality is best. Also voice is cool. Fantastic thing is it's ANC mode it is very clear so that all other noise is cancelled and we can focus on our listening. So I recommend this buds. It's battery capacity I change it once in 4 to 5 days. It is comfortable for you ears and it don't get any issue when we listen for long time. It's size is also small so it is fit on our pocket. It doesn't occur any type of connectivity issue one it open it connects automatically. So you can get it without any doubt.</p>
+        <p>Been using this product for a week and i must say, the audio quality is remarkable, great lows mids and highs, also the bass is great too. ANC is promising, just make sure you use the earbuds pieces (idk what its called) that matches your ears and you'll notice a significant difference. Transparency mode is great too. This product also supports dolby atmos and 3d spatial sound! Touch controls too, that you can configure via 'Realme link' app.</p>
+    </div>
+</div>
+</div>
+<!--BOX-4-------------->
+<div class="box">
+    <div class="box-top">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="images/img12.webp" />
+            </div>
+            <div class="name-user">
+                <strong>anji</strong>
+                <span>@anji123</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    
+    <div class="client-comment">
+        
+        <p>A value for money product. I have used it from last 5 months. Overall material quality is best. Also voice is cool. Fantastic thing is it's ANC mode it is very clear so that all other noise is cancelled and we can focus on our listening. So I recommend this buds. It's battery capacity I change it once in 4 to 5 days. It is comfortable for you ears and it don't get any issue when we listen for long time. It's size is also small so it is fit on our pocket. It doesn't occur any type of connectivity issue one it open it connects automatically. So you can get it without any doubt.</p>
+        <p>Been using this product for a week and i must say, the audio quality is remarkable, great lows mids and highs, also the bass is great too. ANC is promising, just make sure you use the earbuds pieces (idk what its called) that matches your ears and you'll notice a significant difference. Transparency mode is great too. This product also supports dolby atmos and 3d spatial sound! Touch controls too, that you can configure via 'Realme link' app.</p>
+    </div>
+</div>
+</div>
+    <button id="butt"><a href="#">Subscribe</a></button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about" style="text-align: left;">
+                <h3>About TechInnovate</h3>
+                <p>TechInnovate is your go-to platform for the latest news, reviews, and insights in the world of technology.</p>
+            <div class="icons">
+                <p>Follow us on...</p><br>
+                <a ref="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a ref="#"><i class="fa-brands fa-instagram"></i></a>
+                <a ref="#"><i class="fa-brands fa-twitter"></i></a>
+                <a ref="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#Resources">Resources</a></li>
+                    <li><a href="#innovation">Innovation</a></li>
+                    <li><a href="#innovation">Privacy Policy</a></li>
+    
+    
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Tech Topics</h3>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Tech tools</a></li>
+    
+                </ul>
+            </div>
+            <div class="footer-section contact" style="text-align: left;">
+                <h3>Contact Us</h3>
+                <p>Email: contact@techinnovate.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Tech Street, Innovate City, IN 12345</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechInnovate. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function signUp() {
+    alert("Welcom to Tech Innovate! Stay tuned for updates.");
+    }
+    
+    </script>
+</body>
+</html>
